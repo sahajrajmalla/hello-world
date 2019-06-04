@@ -1,0 +1,21 @@
+BULLET POINTS IN JAVASCRIPT!
+
+1) use camelCase for identifiers
+2) spaces around operators.
+3) use 2 spaces for indentation of code blocks
+4) always end a simple statement with a semicolon
+5) Genral rules for complex (compound) statements:
+* Put the opening bracket at the end of the first line.
+* use one space before the opening bracket
+* put the closing bracket on a new line, without leading spaces.
+* do not end a complex statement with a semicolon
+6)OBJECT RULES:
+*place the opening bracket on the same line as the object name.
+*use the colon plus one space between each property and its value.
+*use quotes around a string values, not around numeric values.
+*do not add a comma after the last property-value pair
+*place the closing bracket on a new line, without leading spaces.
+*always end an object defination with a semicolon(;)
+7) line length<80
+8) always use the same naming convention for all your code
+9) Use lower case file names

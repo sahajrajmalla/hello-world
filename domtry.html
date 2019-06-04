@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpert" content="width=device-width, initial-scale= 1.0, maximum-scale= 1.0, user-scalable=no">
+	<meta http-equiv="I-UA-Compatible" content="Ie= edge, chrome= 1">
+	<meta name="HandHeldFriendly" content="true">
+	<title>DOM</title>
+<style type="text/css">
+	.democlass  {
+		color: black;
+	}
+
+	#container {
+		width: 400px;
+		height: 400px;
+		position: relative;
+		background-color: yellow;
+	}
+
+	#animate {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		background-color: red;
+		box-sizing: border-box;
+		font-size: 11px;
+	}
+</style>
+</head>
+
+<body>
+<!--this is a coment-->
+	<h1>welcome to our website!</h1>
+	<p id="demoid"></p>
+	<p name="namename" class="democlass">cham ma massi</p>
+	<p >hehe hehe hasle re!</p>
+
+<button onclick="myMove()">Click Me!</button>
+
+<div id="container">
+	<div id = "animate">My animation will go here</div>
+
+</div>
+
+<h1 onclick="clearThis(this)">CLICK ME motherfucker!</h1>	
+
+<input name="sahajsahaj" type="text" id="fname" onchange="upperCase()">	
+
+<button id="btn">CLICK</button>
+<p id="parara"></p>
+
+<button id="myBtn">Are You There?</button>
+<p id="myBtnPara"></p>
+
+
+<h1 id="id01">My First Page</h1>
+<p id="id02"></p>
+
+
+<p id="id03"></p>
+
+<div id="div1"></div>
+
+	<script type="text/javascript">
+//this is the javascript section;
+	var id=document.getElementById("demoid");
+
+id.innerHTML= "this may or may not be right:::" + document.getElementsByTagName("p")["namename"].innerHTML;
+id.style.backgroundColor= "black";
+id.style.color= "white";
+
+
+
+document.getElementsByClassName("democlass")[0].innerHTML= "fuck me!";
+document.getElementsByTagName("h1")[0].innerHTML=document.getElementsByTagName("h1")[0].innerHTML.toUpperCase();
+
+
+
+
+function myMove()  {
+	var elem = document.getElementById("animate");
+	var pos= 0;
+	var id= setInterval(frame, 5);
+	function frame()  {
+		if (pos == 350)  {
+			clearInterval(id);
+		}else  {
+			pos++;
+			elem.style.top= pos +"px";
+			elem.style.left= pos + "px";
+
+		}
+	}
+}
+
+function clearThis(id)  {
+	id.innerHTML= "sorry for this fucking language";
+}
+function upperCase()  {
+	var x= document.getElementsByTagName("input")["sahajsahaj"];
+	x.value= x.value.toUpperCase();
+}
+
+document.getElementById("btn").addEventListener("click", displayDate);
+
+function displayDate()  {
+	document.getElementById("parara").innerHTML= Date();
+}
+
+
+document.getElementById("myBtn").addEventListener("click", hi);
+
+function hi()  {
+	document.getElementById("myBtnPara").innerHTML=alert("HI BUDDY!");
+}
+
+alert(document.documentElement.innerHTML);
+
+document.getElementById("id02").innerHTML= document.getElementById("id01").firstChild.nodeValue;
+
+
+
+var myCollection = document.getElementsByTagName("p");
+document.getElementById("id03").innerHTML= myCollection.length;	
+
+
+
+
+	</script>
+</body>

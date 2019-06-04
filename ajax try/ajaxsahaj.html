@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX</title>
+</head>
+<body>
+
+	<div id="div1">
+		<p id="p1"></p>
+		<p id="p2"></p>
+	</div>
+
+
+<script type="text/javascript">
+	
+	var xhttp;
+
+	xhttp= new XMLHttpRequest();
+
+	xhttp.onreadystatechange= function()  {
+
+		if (this.readyState === 4 && this.status === 200)  {
+			myFunction(this);
+		}
+	}
+		xhttp.open("GET", "notes.txt" , true);
+		xhttp.send();
+	
+
+	function myFunction(xml) {
+		document.getElementById("p1").innerHTML= xml.responseText;
+	}
+</script>
+</body>
+</html>

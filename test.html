@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equi="X-UA-Compatible" content="Ie=edge, chrome=1">
+    <meta name="HandheldFriendly" content="true">
+</head>
+<body>
+	<div id="div1">
+		<p class="p1" >this is a paragragh</p>
+
+		<p name="p2">this is another paragraph</p>
+
+
+
+	</div>
+
+	<script type="text/javascript">
+		
+		document.getElementById("div1").insertBefore((document.createElement("p")).appendChild(document.createElement("h1")).appendChild(document.createTextNode("This is the new paragragh")), document.getElementsByClassName("p1")[0]);
+
+
+		document.getElementById("div1").removeChild(document.getElementsByTagName("p")["p2"]);
+
+	</script>
+</body>

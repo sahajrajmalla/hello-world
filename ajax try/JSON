@@ -1,0 +1,729 @@
+JSON
+
+Introduction
+
+JSON : Javascript Object Notation
+Json is a syntax for storing and exchanging data
+json is text, written with javascript object notation
+
+exchanging data
+
+When exchanging data between a browser and a server, the data can only be text.
+
+JSON is text, and we can convert any javascript object into JSON and send JSON to the server
+
+Json is text, and we can convert any javascript object into JSON and send JSON to the server
+
+JSON is text, and we can convert any javascript object into JSON and send JSON to the server
+
+We can also convert any JSON received from the server into javascript object
+
+we can also convert any JSON recieved from the server into javascript object
+
+This way we can work with the data as javascript object with no complicated parsing and translation
+
+
+SENDING DATA
+
+if you have data stored in a javascript object, you can convert the object into JSON, and send it to server.
+
+if you have data stored in a javascript object, you can convert the object into JSON, and send it to a server.
+
+Example
+
+var myObj= {name: "John", age: 31, city: "New York"};
+var myJSON= JSON.stringify(myObj);
+window.location = "demo_json.php?x=" + myJSON;
+
+
+we will learn more about the JSON.stringify() function later in this tutorial.
+
+
+RECEIVING DATA
+
+If you receive data in JSON format, you can convert it into a javascript object
+
+var myJSON = '{"name":"john", "age": 31, "city":"New York"}';
+var myObj = JSON.parse(muJSON);
+document.getElementById("demo").innerHTML= myObj.name;
+
+you will learn more about the JSON.parse() function later in this tutorial.
+
+Storing data
+When storing data, the data has to be a certain format, and regardless of where you choose to store
+it, text is always one of the legal formar
+
+When storing data, the data has to be a certain format, and regardless of where you choose to store
+it, text is always one of the legal format
+
+when storing data, the data has to be a certain format, and regardless of where you choose to store it,
+text is always one of the leagl format
+
+JSON makes it possible to store javascript object as text
+
+Example
+
+Storing data in local storage
+
+//Storing data;
+myObj = { name: "sahaj", age: 31, city: "Banepa"};
+myJSON = JSON.stringify(myObj);
+localStorage.setItem("testJSON", myJSON);
+
+//retrieving data;
+txt= localStorage.getItem("testJSON");
+obj= JSON.parse(text);
+document.getElementById("demo").innerHTML = obj.name;
+
+
+what is JSON
+
+1) JSON STANDS for javascript Object Notation
+2) JSON is a lightweight data-interchange format
+3) JSON is self-describing and easy to understand
+4) JSON is language independent
+
+JSON uses javascript syntax, but the JSON format is text only 
+text can be read and used as a data format by any programming language
+
+
+
+WHY USE JSON?
+
+Since the JSON format is text only, it can easily be sent to and fromt a server, and used as a data format by any programming language
+
+Javascript has buit in function to convert a string, written in JSON format in to javascript object
+
+javascript has built in function to convert a string, written in JSON format, into native javascript object
+
+javascript has built in function to convert a string, written in JSON format, in native javascript object
+
+JSON.parse()
+
+So, if you receive data from a server, in JSON FORAMT, you can use it like any other javascript object
+
+so, if you receive data from  a server, in JSON format, you can use it like any other javascript object
+
+so, if you receive data from a server, in JSON format, you can use it like any other javascript object
+
+so, if you receive data from a server, in JSON format, you can use it like any other javascript object
+
+
+
+JSON Syntax
+
+The json syntax is a subset of the javascript syntax.
+
+the json syntax is a subet of the javascript syntax
+
+Json syntax ruels
+
+JSON syntax is derived from javascript object notation syntax.
+Json syntax i derived from javascript object notation syntax
+
+1) data is in name/value pair
+2) data is separated by comma
+3) curly brackets holds the object
+4) square brackets holds arrays
+
+let me repeat it again:
+1) data is in name/value pair
+2) data is separated by comma
+3) curly bracket holds the object
+4) square brackets holds array
+
+Json data- A name and a value
+
+JSON data is written as name/value pairs.
+
+a name/value pair consists of a field name (in double quotes), followed by acolon followed by a value
+
+a name/value pair consists of a field name(in double quotes), followed by a colon floowed by a value
+
+JSON names requrie double quotes, javascript names don't
+
+JSON name require double quotes, javascript names donot
+
+JSON name require double quotes, javascript names donot
+
+JSON name require double quotes, javascript names donot
+
+JSON name require double quotes, javascript names donot
+
+JSON name require dounle quotes, javascript names donot
+
+JSON name require double quotes, javascript names donot
+
+JSON name require double quotes, javascript names  donot
+
+JSon name require double quotes, Javascript names donot
+
+Json name require double quotes, javascript names donot
+
+json name require double quotes, javascript names donot
+
+json name require double quotes, javascript names donot
+
+json name require double quotes, javascript names donot
+
+json name require double quotes, javascript names donot
+
+json name require double quotes, javascript names donot
+"{
+json name require double quotes, javascrip names donot
+
+json name require double quotes, javascript names dont
+
+
+
+JSON- EVALUATES TO JAVASCRIPT OBJECT
+
+The json format is almost identical to javascript objects.
+
+the JSON format is almost identical to javascript objects
+
+In JSON . keys must be string, written with double quotes
+
+JSON 
+
+{"name" : "John"}
+
+In javascript, keys can be sting, numbr or identifiers names
+
+javascript
+
+{name : "john"}
+
+
+
+JSON VALUE
+
+In JSON value must be one of the following data types:
+
+In JSON value must be one of the following data types:
+
+1) sting
+2) number
+3) an object
+4) an array
+5) a boolean
+6) null
+
+IN javascript value can be all of the above, plus any other valid javascript expression including 
+1) a function
+2) date
+3) undefined
+
+In javascript value can be all of the above, plus any other valid javascript expression including
+
+1) a function
+2) a date
+3) undefined
+
+In JSON, string values must be written with double quotes
+
+In JSON, string values must be written with double quotes
+
+In JSON, string value must be written with double quotes
+
+JSON
+
+{"name": "Sahaj"}
+
+
+In javascript, you can write string valu with double or single quotes
+
+javascript 
+
+{name : "sahaj"}
+
+
+Json uses javascript syntax
+
+Json uses javascript syntax
+
+Because JSON syntax is derived from javascript object notation very little extra software is neeed to work wot json wothin javascript
+
+Beacuse json syntax is derived from javascript object notation very little extra software is n
+needed to work JSON within javascript
+
+because json syntax is derived from javascript object notation very little extra software is needed to 
+wotk JSON within javasript
+With javascript we can create an object and assign data to it like this
+
+example
+
+var person = {
+	name: "john",
+	age: 31,
+	city: "new york"
+	};
+
+
+	you can access a javascript object like this
+
+	// return john
+	person.name
+
+	it can also be access like this
+
+	example
+
+	//returns john
+
+	person["name"];
+
+	data can be modified like this
+
+	person.name ="gildarts"
+
+	it can also be modified like this
+
+	person["name"]= "gildarts"
+}
+
+
+
+we will learn how to convert the javascript object in to json later in this tutorial
+
+
+Javascript array as JSON
+the same way javascript object can be used as JSON, javascript arrays can also be used as JSON
+
+you will learn more about array as JSON later in this tutorial
+
+Json files
+
+1) The file type for JSON files is .json
+2) the mime type for json text is "application/json"
+
+
+
+
+
+JSON VS XML
+
+both JSON and XML can be used to receive data from a web server
+
+the following json and xml example boith define an employee object with an arraya of 3 employee
+
+{"employees":[
+{"firstName": "sahaj", "age": 17, "lastName": "raj malla"},
+{"firstName": "kunsha", "age": 16, "lastName": "kunwar"},
+{"firstName": "basuna", "age":35, "lastName": "pradhan"}
+]}
+
+
+
+Why JSON is better than XML
+
+XMl is much more difficult to parse than JSON
+
+JSON is pared in to a ready to use javascript object
+
+json is parsed in to a ready to use javascipt object
+
+JSON is parsed into a ready to use javascript object
+
+JSON is parsed in to a ready to use javascript object
+
+for ajax application, JSON is faster and easier than XML
+
+Using XML
+
+1) fetch an XML document
+2) use the XML DOM to loop throght the document
+3) extract value and store in variable
+
+Using JSON:
+1) fetch a JSON string
+2) jSon.parse the json string
+
+
+
+JSON.parse()
+
+a common use of JSON is to exchange data to/from a web server
+
+when receiving data form the web server, the data is always a string
+
+parse the data with JSON.parse() and the data becomes the javascript object
+
+Example- parsing JSON
+
+imagine we received this text from a web server
+
+var person='{"name" : "sahaj", "age": 31, "city" : "banepa"}'
+
+use the javascript function JSON.parse() to convert text in to javascript object
+
+var obj = JSON.parse(person);
+
+
+make sure the text is written in JSON format, or else you will get a syntax error.
+
+
+USe the javascript object in your page
+
+
+
+
+
+JSON.stringify()
+stringify
+
+a common use of JSON is to exchange data to and from a web server
+
+when sending data to a web server, the data has to be string.
+
+Convert a javascript object into string with JSON.stringify().
+
+Stringify a javascript object
+
+imagaine we have this object in javascript
+
+var obj= {name: "John", age: 30, city: "banepa"};
+
+Use the javascript function JSON.stringify() to convert it into a string.
+
+var myJSON= JSON.stringify();
+
+the result will be string folliwng the JSON notation
+
+myJSON is now a string, and ready to be sent to a server.
+
+
+Example
+
+var obj= { name: "john", age: 31, city: "New York"};
+var myJSON= JSON.stringify(obj);
+document.getElementById("demo").innerHTML= myJSON;
+
+
+
+You will learn how to send JSON to the server in the next
+
+Stringify a javascript array
+
+it is possible to stringify javascript array:
+
+Imagaine we have this array in the javascript
+
+
+var arr= [ "john", "peter", "sally", "jane" ];
+
+use the javascript function JSON.stringify() to convert it into the string.
+
+var myJSON = JSON.stringify(arr);
+
+
+
+the result will be string follwing th json notation
+
+myJSON is now a string, ready to be sent to the server.
+
+Example
+
+var arr= [ "apple", "banana", "mango" ];
+var myJSON = JSON.stringify(arr);
+document.getElementById("demo").innerHTML= myJSON;
+
+you will learn how to send JSON to the server in the next chapter
+
+
+
+
+EXCEPTIONS
+
+Stringify dates
+
+in JSON, date objects are not allowed. the JSON.stringify() will convert any dates into strings.
+
+Stirngify function
+
+In JSON, function are not allowed as object values.
+
+the jSON.stringify() function will remove any function s from javascript from a javascript object both the key and the value:
+
+example
+
+var obj= {fname: "sahaj", lname: "malla", fullname: function() {return this.fname + " " + this.lname}, age: 17}
+var myJSON = JSON.stringify(obj);
+document.getElmentById("demo").placeholder= myJSON;
+
+
+this can be omited if you convert your function into string before running the JSON.stringify() function
+
+this can be omited if you convert your function into string before running the JSON.stringify() function
+
+
+Example
+
+var obj= {fname: "sahaj", lname: "malla", fullname: function() {return this.fname + " " + this.lname}, age: 17}
+obj.fullname= obj.fullname.toString();
+var myJSON= JSON.stringify(obj);
+
+document.getElementById("demo").placeholder= myJSON;
+
+
+
+You should avoid using function in JSON, the function will lose their scope, and you would have to use eval() to convert them back to the function
+you should avoid using function in JSON , the function will lose their scope, and you would have to use
+eval() to convert them back into function
+
+
+
+JSON object
+
+
+
+Object syntax
+Example
+
+{ "name" : "john", "age": 30, "car": null}
+
+JSON objects are surrounded by curly braces{}
+
+JSON object are written in key/value pairs
+
+keys must be string, and value must be valid JSON data type (string, number, boolean, object, array, nill)
+
+keys and value are separated by a colon
+
+each key/value pair is separated by a comma
+
+Accessing object value
+You can access the object values by using dot(.) notation
+
+
+You can also access the object value by using bracket ([]) notation:
+
+Looping an object
+you can loop through object properties by using for-in loop
+Example
+In for-in loop, use the bracket notaion to access the property values
+
+in for-in loop, use the bracket notation to access the property values
+
+NESTED JSON OBJECT
+
+Value in a JSON object can be another JSON object
+
+Example
+myobj= {
+	"name": "Sahaj Raj Malla",
+	"age": 17,
+	"cars" : {
+		"car1": "Tesla",
+		"car2": "Lamborgini",
+		"car3": "yamraj"
+
+	}
+}
+
+
+You can access nested JSON object by using the dot dotation or bracket notation
+Example
+
+Example
+
+x= myObj.cars.car2;
+//or;
+x= myObj.cars["car2"];
+
+
+
+Modify value
+
+You can use the dot notation to Modify any value in a JSON object
+
+Example
+myObj.cars.car2= "mercedes"
+
+
+you can also use the brakcet notation to modify a value in a JSON object
+Example
+myObj.cars["car2"]= "mercedes";
+
+
+
+Delete object properties
+
+use the Delete keyword to delete properties from a json object
+Example
+
+delete sahaj.firstName;
+
+
+JSON ARRAYS
+
+ARRAYS AS JSON objects
+example
+
+["ford","bmw", "fiat"]
+
+
+
+arrays in JSON are almost the same as array in javascript
+
+in JSON, array value must not beof type string, number, object, array, boolean or null
+
+In javascript, array values can be all of the above, plus anny other valid javascript expression, including
+function, dates and undefined
+
+ARRAY IN JSON OBJECT
+Example
+
+{
+	"name": "john",
+	"age": 30,
+	"cars": ["ford", "bmw", "royal roance"]
+
+}
+
+
+Accessing array values
+
+you can access the array values by using the index number:
+
+you can access the array values by using the index number
+
+you can access the array value by using the index number
+
+you can access the array value by using the index number
+
+example
+x= myObj.cars[0];
+
+
+looping throgh an array
+you can access array value by using for in loop
+example
+for (i in myObj.cars) {
+	x+=myObj.cars[i]
+}
+
+
+or you can you can use loop:
+
+
+NESTED ARRAY IN JSON OBJECTS
+value in an array can also be another array , or even another javascript object
+value in an array can also be another array, or even another javacsript object
+value in an array can also be another array, or even another javascript object
+value in an array can also be another array, or even another javascript object,
+
+example
+myObj= {
+	"name": "john",
+	"age": 30,
+	"cars": [
+		{"name": "ford", "model": }]
+}
+
+
+
+JSON HTML 
+
+jSON can very easily be translated into javascript
+JAvascript can be used to make HTML in your web pages
+
+THMLT table
+
+Make an HTML table with data recieved as JSON.
+
+Example
+
+obj= { table: "customer", limit: 20};
+dbParam = JSON.stringify(obj);
+xmlhttp= new XMLHttpRequest();
+xmlhttp.onreadystatechange = function () {
+	if (this.readyState == 4 && this.status == 200) {
+
+myObj= JSON.parse(this.responseText);
+txt += "<table border= '1'>"
+
+
+JSONP
+
+JSONP is a method of sending json data without worrying about cross-domain issues.
+
+JSONP doesnot not use the XMLHttpRequest object
+
+JSONP uses the <script> tag instead
+
+
+JSONP Introduction
+JSONP stands for JSON with padding
+
+JSON stands for Json for padding
+
+requesting a file from another domain can cause problem, due to cross domain policy
+
+requesting a file from another domain can cause promblem, due to the cross domain policu
+
+Requesting an external script from another domain does not have this promblem
+
+requesting a file from another domain can cause promblem, due to the cross-domain policy
+
+requesting an external script from another domain doesnot have this promblem
+
+requesting a file from another domain can cause promblem, due to cross-domain policy.
+
+requesting a file from another domain can cause promblem, due to cross-domain policy
+
+requesting an external script from another domain does not have this promblem
+
+JSONP uses this advantages, and request files using the script tags instead of the XMLHttpRequest objject
+
+JSONP uses this advantages, and request files using the script tags and instead of the XMLHttpRequest onject
+
+JSONP uses this advantages, and request files using the script tags instead of the XMLHttpRequest object
+<script  scr= "demo_jsonp.php">
+
+THE SERVER file
+the file on the server wraps the result inside a function call
+
+Example
+<?php
+$myJSON= '{"name": "john", "age": 30, "city": "New York"}';
+
+echo
+
+
+Creating a dynamic Script tag
+the example above will execute the "myFunc" function when the page is loading, based on where you put the script tag, which is not very ssatisfyinh
+
+the example above will execute the "myFunc" function when the page is loading, 
+based on where you put the script tag, which is not very ssatisfying
+
+the example above will execute the "myFunc" function when the page is loading,
+based on where you put the scirpt tag, which is not very ssatisfying
+
+the script tag should only be created when needed.
+
+Example
+
+function onclick() {
+	var s = document.createElement("script");
+	s.src= "demo.php";
+	document.body.appendchild(s);
+}
+
+
+
+Dynamic JSONP result
+
+The example above are still very static.
+
+make the example dynamic by sending JSON to the php file, and let the php file return a JSON object on the information it gets
+
+
+Dynamic JSONP result
+
+The example above are still very static
+
+make the example dynamic by sending JSON to the php file, and let the php file return a JSON object basesd on the information it gets.
+
+PHP file
+<?

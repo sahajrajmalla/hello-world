@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equi="X-UA-Compatible" content="Ie=edge, chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>HAMROSANSAR</title>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style type="text/css">
+html {
+    font-size: 100%;
+
+
+}
+
+body  {
+   	height: auto;
+    overflow-x: none;
+    overflow-y: none;
+    	background-color: #88b5ef;
+}
+
+header {
+	width: 100%;
+	height: 13vh;
+	box-sizing: border-box;
+
+
+}
+
+header h1 a {
+	font-size: 3rem;
+	margin-left: 3vw;
+	text-decoration: none;
+	color: black;
+	float: left;
+	color: white;
+
+}
+
+header ul  {
+	flex-direction: right;
+	display: flex;
+	list-style-type: none;
+	box-sizing: border-box;
+	height: auto;
+	width: auto;
+	position: absolute;
+	margin-left: 40vw;
+	padding: 0 10px;
+	float: left;
+}
+
+header li .category {
+	font-size: 1.2rem;
+	height: 6vh;
+	position: absolute;
+	margin-left: -5.5vw;
+	padding-top: 1vh;
+
+}
+
+header li input[name="search"]  {
+	width: 40vw;
+	height: 6vh;
+	overflow-x: auto;
+	font-family: serif;
+	font-weight: 2rem;
+	font-size: 1.5rem;
+	position: relative;
+}
+
+header ul form li .search-icon {
+	position: absolute;
+	margin-left: 40.5vw;
+	margin-top: -2.6vw;
+	width: auto;
+	height: 6vh;
+	padding-top: 1vh;
+	color: black;
+
+
+}
+
+header ul form li .search-icon:hover {
+	
+	color: #4da6ff;
+}
+
+
+nav {
+	box-sizing: border-box;
+	margin-top: 12vh;
+	position: absolute;
+	width: auto;
+	height: auto;
+}
+
+
+nav ul {
+	list-style-type: none;
+	box-sizing: border-box;
+	width: auto;
+	height: auto;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	padding: 15px 60px;
+	font-size: 1.7vw;
+	color: black;
+}
+
+header nav ul li a:hover {
+	background-color:#3e8e41 ;
+	color:white; 
+	transition: 1s;
+}
+
+.dropbtn {
+  background-color: inherit;
+  color: black;
+  padding: 3px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left:10px; 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #e2e2e2; color: black;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.dropdown-category  {
+	position: relative;
+  display: inline-block;
+
+
+}
+
+.dropbtn2  {
+
+  color: black;
+  padding: 3px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+width: 50px;
+margin-left: 20px; 		
+}
+
+.dropdown-category-content  {
+	position: absolute;
+	background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 700px;
+  height: auto;
+  display: none;
+  overflow: auto;
+}
+
+.dropdown-category-content a{
+	display: inline-block;
+	font-size: 1.7vw;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	margin-top: 5px; 
+	border-right: 0.11px solid #d9d9d9; 
+	border-bottom: 0.11px solid #d9d9d9;
+}
+
+.dropdown-category-content a:hover {background-color: #f1f1f1;}
+
+.dropdown-category:hover .dropdown-category-content {
+  display: block;
+}
+
+.dropdown-category:hover .dropbtn2 {
+  background-color: #3e8e41; color: white;
+}
+
+#body  {
+	display: grid;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns: auto auto auto auto;
+	background-color: #e2e2e2;
+	margin-top: 55px;
+}
+
+section {
+	grid-column: 1/2;
+	grid-row: 2/ span 3;
+	border: 0px solid black;
+	margin-top: 55px;
+	margin-left: 20px;  
+	box-sizing: border-box;
+	width: 860px;
+	height: 640px;
+	border-right: 3px solid white;
+	border-bottom: 3px solid white;
+
+}
+
+#headergreeting {
+	grid-column: 1/ span 2;
+	grid-row: 1/2;
+}
+
+.headergreeting{
+	font-size: 5vw;
+ 	margin-left: 270px;
+
+}
+
+.discriptionpara {
+	font-size: 1.7vw;
+	text-align: center;
+}
+
+section h2{
+	font-size: 2vw;
+	margin-left: 20px;
+}
+
+section .signup-para  {
+	font-size: 1.2vw;
+	margin-left: 40px; 
+
+}
+
+input[name="text"]{
+	width: 300px;
+	height: 40px;
+	margin: 10px 25px;
+	border-radius: 6px;
+	border: 0.3px outset gray; 
+	font-size: 1.25vw;
+}
+
+
+input[name="email"]{
+	width: 657px;
+	height: 40px;
+	margin: 10px 25px;
+	border-radius: 6px;
+	border: 0.3px outset gray; 
+	font-size: 1.25vw;
+}
+
+.dob{
+	width: 200px;
+	height: 40px;
+	margin: 10px 35px;
+	border-radius: 6px;
+	border: 0.3px outset gray; 
+	font-size: 1.25vw;
+}
+
+.birthday {
+	font-size: 1.5vw;
+	margin-left: 90px; 
+}	
+input[name="gender"]  {
+	width: 40px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.agreement {
+	font-size: 0.9vw;
+	margin-left: 20px;
+	width: 300px;
+}
+
+input[name="submit"]{
+	width: 200px;
+	height: 40px;
+	margin-left: 20px;
+	background-color: hsl(120, 100%, 30%);
+	border: 5px outset hsl(120, 100%, 30%);
+	border-radius: 5px;
+	font-size: 1.3vw;
+	color: white;
+
+
+}
+
+article  {
+	grid-column: 2/span 3;
+	grid-row: 2/span 3;
+	margin-top: 100px;
+	
+	border-right: 3px solid white;
+}
+
+.login {
+	font-size: 2.5vw;
+	text-align: center;
+}
+
+.login-para {
+	font-size: 1.2;
+
+}
+
+input[name="login"]  {
+		width: 100px;
+	height: 30px;
+	margin-left: 20px;
+	background-color: skyblue;
+	border: 5px outset skyblue;
+	border-radius: 5px;
+	font-size: 0.9vw;
+	color: white;
+
+
+}
+
+#feedback {
+	margin-left: 40px;
+	position: relative;
+
+}
+
+.feedback-header {
+	font-size: 2vw;
+	text-align: center;
+	color: gray;
+}
+
+input[name="feedback"]{
+	margin-top:20px;
+	margin-left: 400px; 
+	width: 500px;
+	height: 200px;
+	font-size: 1.1vw;
+	overflow: auto;
+	box-sizing: border-box;
+	text-overflow: auto;
+	
+	
+}
+
+input[name="submit2"] {
+	
+	width: 200px;
+	height: 40px;
+	margin-left: 550px;
+	margin-top: 20px;
+	background-color: hsl(120, 100%, 30%);
+	border: 5px outset hsl(120, 100%, 30%);
+	border-radius: 5px;
+	font-size: 1.3vw;
+	color: white;
+
+}
+
+footer {
+	margin-top: 20px;
+	width: auto;
+	height: 100px;
+	color: black;
+}
+
+footer .right-content {
+	float: left;
+	font-size: 1.2vw;
+	color: black;
+	margin-right: 30px;
+}
+
+footer .left-content  {
+	margin-left: 30px;
+	float: right;
+	font-size: 1.2vw;
+	color: black;
+}
+</style>
+</head>
+
+
+
+<body>
+<header>
+		<h1><a id="god-header" href="#">HAMROSANSAR</a></h1>
+
+
+		<ul> <form>
+			<li><label class="category"><div class="dropdown-category">
+				<button type="button" class="dropbtn2">All  <i class="fas fa-chevron-circle-down"></i></button>
+				<div class="dropdown-category-content">
+					<a href="#">All</a>
+					<a href="#">Wearing</a>
+					<a href="#">Gym Item</a>
+					<a href="#">Handicraft</a>
+					<a href="#">Technology</a>
+					<a href="#">Automobile</a>
+					<a href="#">House</a>
+					<a href="#">Rent</a>
+					<a href="#">Furniture</a>
+					<a href="#">Gloceries</a>
+					<a href="#">Food</a>
+					<a href="#">Electronics</a>
+					<a href="#">Hardware</a>
+					<a href="#">Software</a>
+					<a href="#">Gears</a>
+					<a href="#">Electric Motor</a>
+					<a href="#">Bags</a>
+					<a href="#">Utensial</a>
+					<a href="#">Lights</a>
+					<a href="#">Aluminuim Windows</a>
+					<a href="#">Painting Colors</a>
+					<a href="#">Steel</a>
+					<a href="#">Investing</a>
+					<a href="#">Blankets</a>
+					<a href="#">Domestic Animals</a>
+					
+					</div>
+				</div>
+
+
+
+			</label></li>
+			<li><input type="search" name="search" placeholder="  Search to Explore..." required action="www.google.com" ></li>
+			<li><label class="search-icon"><i class="fas fa-search"></i></label></li>
+		</form>
+		
+		</ul>
+
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Favorites</a></li>
+				<li><a href="#">Cart</a></li>
+				<li><div class="dropdown">
+					<button type="button" class="dropbtn"><i class="fas fa-chevron-circle-down"></i></button>
+					<div class="dropdown-content">
+						
+							<a href="#">Special</a>
+							<a href="#">About Us</a>
+							<a href="#">Log Out</a>
+							<a href="#">Help</a>
+						
+					</div>
+				</div>
+
+			
+</header>
+
+<div id="body">
+	<div id= headergreeting>
+		<h1 class="headergreeting">Welcome To Our Website</h1>
+</div>
+<section>
+	
+	<p class="discriptionpara">
+		Shop Anything, Everything Anytime Anywhere Everywhere with HAMROSANSAR.
+	</p>
+
+	
+	<h2>Let's Create an Account</h2>
+<p class="signup-para">
+		It was, is and will always be free.
+	</p>
+
+	<form>
+		
+		<input name="text" type="text" name="firstname" required placeholder="First Name">
+
+		<input name="text" type="text" name="lastname" required placeholder="Surname"><br>
+
+		<input name="email" type="email" name="email" required placeholder="E-mail address"><br>
+
+		<input name="text" type="password" name="password" required placeholder="password"><br>
+
+		<label class="birthday">Birthday</label><br>
+		<input class="dob" type="date" name="day" required max="currentDate" name="dob"><br>
+
+	<form>
+  <input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other  
+</form> 
+<p class="agreement">
+	By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a> and <a href="#">Cookie Policy</a>. You may receive SMS notification from us and can opt out at any time</p>
+
+
+<input type="submit" name="submit" value="Sign Up" action="sahaj.php">
+
+</section>
+
+<article>
+	<h2 class="login">Log In</h2>
+<p class="login-para">I already have an account</p>
+
+<input id="email" type="email" name="text" placeholder="E-mail"><br>
+
+<input type="password" name="text" placeholder="password"><br>
+<input type="checkbox" name="checkbox"><label>Remember me</label><br>
+<input type="submit" name="login" value="Log In">
+</div>
+
+</article>
+
+<div id="feedback">
+
+<h2 class="feedback-header">Tell us how we can improve</h2>
+
+<input id = "demo" type="textarea" name="feedback" placeholder="     Your voice is important. Help us make it eaiser to find what you want"><br>
+
+<input type="submit" name="submit2" value="Submit">
+</div>
+
+<footer>
+	<div class="left-content">
+	<label>HAMROSANSAR&copy;&trade;</label><br>
+	<label id="p1">www.hamrosansar.com</label><br>
+	<label id="p2">mallasahajraj@gmail.com</label><br>
+</div>
+
+</footer>
+
+
+
+
+<script type="text/javascript">
+
+var xhttp = new XMLHttpRequest();
+
+xhttp.onreadystatechange = function()  {
+	if (this.readyState === 4 && this.status === 200)  {
+		myFunction(this);}
+	}
+
+
+	xhttp.open("GET", "myJSON.json", true);
+	xhttp.send();
+	
+	function myFunction(xml)  {
+		var obj = JSON.parse(xml.responseText);
+		obj.fullName = eval ("(" + obj.fullName + ")");
+		document.getElementById("p1").firstChild.nodeValue= obj.fullName();
+	}
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equi="X-UA-Compatible" content="Ie=edge, chrome=1">
+    <meta name="HandheldFriendly" content="true">
+</head>
+<body>
+	<div id="div1"></div>
+	<p id= "p1"></p>
+	<p id="p2"></p>
+
+
+	<script type="text/javascript">
+		
+	
+
+
+
+
+var notes= new XMLHttpRequest();
+
+notes.onreadystatechange = function() {
+	if (this.readyState === 4 && this.status === 200) {
+		myFunction(this);
+	}
+};
+
+notes.open("GET", "ajaxnote.txt" , true);
+notes.send();
+
+function myFunction(xml)  {
+	document.getElementById("p2").innerHTML = xml.responseText;
+}
+
+xhhtp.open("GET", "notes.txt" , true);
+xhhtp.send();
+
+function note(xml)  {
+	document.getElementById("p2").innerHTML = xml.responseText;
+}
+
+	</script>
+</body>

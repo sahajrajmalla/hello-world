@@ -1,0 +1,7 @@
+{
+	"firstName": "Sahaj Raj",
+	"lastName": "Malla",
+	"class": 11,
+	"age": 17,
+	"fullName": "function () {return this.firstName + ' ' + this.lastName;}"
+}

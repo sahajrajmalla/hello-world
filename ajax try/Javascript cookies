@@ -1,0 +1,99 @@
+Javascript cookies
+
+cookies let you store user information in web pages
+
+What are cookies?
+
+cookies are data, stored in small text files, on your computer
+
+when a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user
+
+cookies were invented to solve the promblem "how to remember information about the user"
+
+cookies were invented to solve the promblem "how to remember information about the user"
+
+Cookies were invented to solve the promblem, "how to remember information about the user"
+
+1) When a user visits a web oage, his/her name can be stored in a cookie
+2) Next time the user visits the page, the cookie "remembers" his/her name.
+
+cookies are saved in name-value pairs like this:
+
+Usernama = sahaj
+
+When a broser request a web page from the server, cookies belonging to the page is added to the request. this way the server gets the necessary data to "remember" information about the users.
+
+None of the example below will work if your browser has local cookies suuport turned off
+
+Create cookies with javascript
+
+javascript can create, read and delete cookies with the document.cookie property
+
+With the javascript, a cookie can be created like this:
+
+document.cookie = "username= john doe"
+
+You can also add an expiry date (in UTC time), default, the cookie is deleted when the browser is closed
+
+document.cookie = "username= john doe; expires= thu, 18 dec 2013 12:00:00 UTC";
+
+
+woth the path parameter, you can tell the browser what path the cookie belongs to. by default, the cookies
+belong to the current page.
+
+with the path parameter, you can tell the browser what path the cookies belong to. by de
+
+with the path parameter, you can tell the browser what path the cookie belongs to. by default, the cookies belongs to the current page
+
+document.cookie = "username= John Doe; expires = thu, 18 dec 2013 12:00:00 UTC; path=/";
+
+WIth the path parameter, you can tell the browser what path the cookies belongs to. by default, the cookies belong to the current page
+
+document.cookie = "username = john doe; expires = thu 18, dec 2014 12:00:00 UTC; path =/";
+
+Read a cookie with the javascript
+
+With javascript, cookie can be read like this:
+
+var x = document.cookie
+
+document.cookie will return all cookies in one string much like :
+cookie1= value, cookie2= value, cookie3= value;
+
+
+Change a cookie with the javascript
+
+
+change a cookie with javascript
+
+With the javascript, you can change a cookie the same way as you craete it
+
+
+Delete a cookie with the javascript
+
+deleting a cookie is very simple
+
+deleting a cookie is very simple
+
+you donot have to specify a cookie value when you delete a cookie
+ 
+you donot have to specify a cookie value when you delete a cookie
+
+just set the expires parameter to a passed date.
+
+
+you should define the cookie path to ensure that you delete the right cookie
+
+some browser will not let you delete a cookie if you donot specify the path
+
+the cookie string
+
+the document.cookie property looks like a normal text string. but it is not
+
+even if you write a whole cookie string to document.cookie, when you read it out again, you will only see the name-value pair of it.
+
+if you set a new cookie, older cookies are not over
+
+
+javascreipt
+

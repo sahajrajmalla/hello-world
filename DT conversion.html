@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-wdith initial-scale=1.0">
+	<title>DT Conversion</title>
+<style type="text/css">
+	html{
+		background-image: url(back.png);
+		font-family: sans-serif;
+	}
+	#left {
+		float: left;
+		box-sizing: border-box;
+		border-radius: 5px;
+		border: 5px solid black;
+		background-color: gray;
+
+	}
+
+
+	#right {
+		float: right;
+		box-sizing: border-box;
+		border-radius: 5px;
+		border: 5px solid black;
+		background-color: gray;
+		visibility: hidden; 
+
+	}
+
+	input{
+		padding: 8px;
+		background-color: inherit;
+		border-top: none;
+		border-left: none; 
+		border-bottom: #5px solid white;
+		border-right: #3px solid white;
+		cursor: pointer; 
+	}
+
+	input:hover{
+		background-color: black;
+		color: white;
+	}
+
+	input:focus{
+		background-color: white;
+		color: black;
+	}
+</style>
+</head>
+<body>
+	<table id="left">
+	<tr>
+		<th>Original Value</th>
+		<th>Converted to Number</th>
+		<th>Converted to String</th>
+		<th>Converted to Boolean</th>
+	</tr>
+
+	<tr>
+		<td>false</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>true</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>0</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>1</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>"0"</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>"000"</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>"1"</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>NaN</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>Infinity</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>-infinity</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>""</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>"20"</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>"twenty"</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>[]</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>[20]</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>[10, 20]</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>["twenty"]</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>["ten", "twenty"]</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>function(){}</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>{}</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>null</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+	<tr>
+		<td>undefined</td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+		<td><input type="text" name="" value=""></td>
+	</tr>
+
+</table>
+
+
+<input id="reset" type="reset" value="RESET">
+
+
+<button type="button" id="Show" 
+ onclick="document.getElementById('right').style.visibility='visible'" 
+>Show Answer</button>
+
+
+
+<table id="right">
+	<tr>
+		<th>Original Value</th>
+		<th>Converted to Number</th>
+		<th>Converted to String</th>
+		<th>Converted to Boolean</th>
+	</tr>
+
+	<tr>
+		<td>false</td>
+		<td><input type="text" name="" value="0"></td>
+		<td><input type="text" name="" value='"false"'></td>
+		<td><input type="text" name="" value="false"></td>
+	</tr>
+
+	<tr>
+		<td>true</td>
+		<td><input type="text" name="" value="1"></td>
+		<td><input type="text" name="" value='"true"'></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>0</td>
+		<td><input type="text" name="" value="0"></td>
+		<td><input type="text" name="" value="'0'"></td>
+		<td><input type="text" name="" value="false"></td>
+	</tr>
+
+	<tr>
+		<td>1</td>
+		<td><input type="text" name="" value="1"></td>
+		<td><input type="text" name="" value="'1'"></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>"0"</td>
+		<td><input type="text" name="" value="0"></td>
+		<td><input type="text" name="" value="'0'"></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>"000"</td>
+		<td><input type="text" name="" value="0"></td>
+		<td><input type="text" name="" value="'000'"></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>"1"</td>
+		<td><input type="text" name="" value="1"></td>
+		<td><input type="text" name="" value="'1'"></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>NaN</td>
+		<td><input type="text" name="" value="NaN"></td>
+		<td><input type="text" name="" value="'NaN'"></td>
+		<td><input type="text" name="" value="false"></td>
+	</tr>
+
+	<tr>
+		<td>Infinity</td>
+		<td><input type="text" name="" value="infinity"></td>
+		<td><input type="text" name="" value="'infinity'"></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>-infinity</td>
+		<td><input type="text" name="" value="-infinity"></td>
+		<td><input type="text" name="" value="'-infinity'"></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>""</td>
+		<td><input type="text" name="" value="0"></td>
+		<td><input type="text" name="" value="''"></td>
+		<td><input type="text" name="" value="false"></td>
+	</tr>
+
+	<tr>
+		<td>"20"</td>
+		<td><input type="text" name="" value="20"></td>
+		<td><input type="text" name="" value="'20'"></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>"twenty"</td>
+		<td><input type="text" name="" value="NaN"></td>
+		<td><input type="text" name="" value="'twenty'"></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>[]</td>
+		<td><input type="text" name="" value="0"></td>
+		<td><input type="text" name="" value="''"></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>[20]</td>
+		<td><input type="text" name="" value="20"></td>
+		<td><input type="text" name="" value="'20'"></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>[10, 20]</td>
+		<td><input type="text" name="" value="NaN"></td>
+		<td><input type="text" name="" value="'10, 20'"></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>["twenty"]</td>
+		<td><input type="text" name="" value="NaN"></td>
+		<td><input type="text" name="" value="'twenty'"></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>["ten", "twenty"]</td>
+		<td><input type="text" name="" value="NaN"></td>
+		<td><input type="text" name="" value="'ten, twenty'"></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>function(){}</td>
+		<td><input type="text" name="" value="NaN"></td>
+		<td><input type="text" name="" value="'function(){}'"></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>{}</td>
+		<td><input type="text" name="" value="NaN"></td>
+		<td><input type="text" name="" value="'[object Object]'"></td>
+		<td><input type="text" name="" value="true"></td>
+	</tr>
+
+	<tr>
+		<td>null</td>
+		<td><input type="text" name="" value="0"></td>
+		<td><input type="text" name="" value="'null'"></td>
+		<td><input type="text" name="" value="false"></td>
+	</tr>
+
+	<tr>
+		<td>undefined</td>
+		<td><input type="text" name="" value="NaN"></td>
+		<td><input type="text" name="" value="'undefined'"></td>
+		<td><input type="text" name="" value="false"></td>
+	</tr>
+
+
+
+
+</table>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

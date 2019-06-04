@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+</head>
+<body data-ng-app= "myApp">
+	<div ng-controller="myCtrl">
+		<ul>
+			<li ng-repeat="x in bio">{{x.Name + ", " + x.Country}} </li>
+		</ul>
+	</div>
+
+	
+
+	<script type="text/javascript">
+		var app= angular.module("myApp", []);
+		
+		app.controller("myCtrl", function($scope,$http)  {
+			$http.get("bio.php").then(function(response)  {
+				$scope.bio= response.data.names
+			});
+		});
+
+		
+	</script>
+
+</body>
+</html>

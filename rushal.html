@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewpoint" content="width=devive-width initial-scale=1.0">	
+	<title>MY MAIN WEBSITE</title>
+</head>
+<style>
+
+body{
+	margin: 0 auto 0 auto;
+	height: 768px;
+	width: 1024px;
+	background-color: #ffffcc;
+	box-sizing: border-box;
+	
+	
+}
+
+#header{
+	font-size: 2vw;
+	font-family: sans-serif;
+
+}
+
+#text, #text1 {
+	width: 100%;
+	padding: 10px 0px;
+	margin: 10px 0 10px 0;
+	border: 1px inset gray;
+	border-radius:6px;
+}
+
+#textarea{
+	width: 100%;
+	height: 200px;
+}
+
+#text:hover, #textarea:hover{
+	background-color:#ffff99 ;
+	color: black;
+}
+
+#text:focus, #textarea:focus{
+	background-color: black;
+	color: white;
+	
+	}
+
+
+</style>
+<body>
+<div>
+	<form>
+		<p id="header">Contant Information</p>
+		<input id="text" type="text" value="First Name" onfocus="document.getElementById('text').value=''"><br>
+		<input id="text1" type="text" value="Middle Name" onfocus="document.getElementById('text1').value=''"><br>
+		<input id="text" type="text" value="Last Name"><br>
+		<input id="text" type="text" value="Permanent Address"><br>
+		<input id="text" type="text" value="Temporary Address"><br>
+		<input id="text" type="text" value="Contant Telephone"><br>
+		<input id="text" type="text" value="Email"><br>
+	
+
+
+
+	<p id="header">Personal Details</p>
+<input type="radio" name="male">Male
+<input type="radio" name="female">Females<br>
+
+
+<input id="text" type="text" value="DOB. in BS"><br>
+<input id="text" type="text" value="DOB. in AD"><br>
+<input id="text" type="text" value="Father's Name"><br>
+<input id="text" type="text" value="Occupation"><br>
+<input id="text" type="text" value="Mother's name"><br>
+<input id="text" type="text" value="Occupation"><br>
+
+
+
+	<p id="header">Academic Details</p>
+	<input id="text" type="text" value="Qualification"><br>
+	<input id="text" type="text" value="Last Examination Passed"><br>
+	<input id="text" type="text" value="Name of School/ Institution"><br>
+	<input id="text" type="text" value="Year"><br>
+	<input id="text" type="text" value="Percentage/GPA"><br>
+
+<p id="header">Program (+2)</p>
+	<input type="radio" name="sci">Scinece +2
+	<input type="radio" name="mgn">Management
+	<input type="radio" name="humanity">Humanities +2
+
+<p id="header">Course Selection</p>
+<input type="radio" name="rushal">Day Shift
+<input type="radio" name="morning">Morning Shift
+
+<p id="header">Facilities</p>
+<p>Hostel Facilities: <input type="radio" name="yes1">Yes
+					      <input type="radio" name="no1">No</p>
+
+<p>Transport Facilities: <input type="radio" name="yes2">Yes
+					      <input type="radio" name="no2">No</p>
+
+<p id="header">Message to Addmission Office</p>
+
+	<input id="textarea" type="text" name="commentrushalee" value="Give Us Your FeedBack">
+	
+	</form>
+
+</div>
+<script>
+	var x=document.getElementById("text");
+	document.getElementByById("text").onclick=x.value=" ";	
+</script>
+</body>
+</html>
+
+

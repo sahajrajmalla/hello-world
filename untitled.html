@@ -1,0 +1,200 @@
+<html>
+<!doctype>
+<meta name="viewpoint" content="width:device-width initial-scale=1 charset="UTP-8">
+<head>
+	<style>
+		body{
+			width:100%;
+			height: 100%;
+			background-image: url(back.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+
+		}
+
+#body{
+	margin: 0 auto 0 auto;
+	width: 1023px;
+	height: auto;
+	display: grid;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns: 500px 523px;
+	grid-gap: 5px;
+	box-sizing: border-box;
+}
+
+header{
+	grid-column: 1/span 2;
+	grid-row: 1/2;
+	text-align: center;
+
+}
+
+
+
+
+nav{
+	grid-column: 1/span 2;
+	grid-row:2/3;
+	display: flex;
+}
+
+nav ul{
+	display: flex;
+	width: 100%;
+	height: auto;
+
+}
+
+nav ul li{
+	padding: 10px;
+	text-decoration: none;
+	list-style-type: none;
+	cursor: pointer;
+
+}
+
+nav ul li a{
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.6vw;
+	width: 100%;
+	height: 100%;
+
+}
+
+nav ul li:hover, nav ul li a:hover{
+
+	background-color: blue;
+	color: white;
+}
+
+
+section{
+	grid-column: 1/2;
+	grid-row: 3/4;
+	overflow: auto;
+}
+
+section p {
+	font-size: 1.4vw;
+	color: purple;
+}
+
+aside{
+	grid-column:2/3;
+	grid-row: 3/4;
+	justify-content: center;
+	align-content: center;
+	box-sizing: border-box;
+}
+
+aside .form{
+	justify-content: center;
+	align-content: center;
+	margin-left: 200px;
+	width: 100%;
+	height: 100%;
+
+}
+
+ aside .form label{
+ 	font-size: 2vw;
+ 	opacity: 0.2px;
+
+ }
+
+ aside .form input{
+ 	width: 50%;
+ 	height: auto;
+ 	background-color: inherit;
+ 	border-radius: 5px;
+
+ }
+
+
+
+footer{
+	grid-column: 1/ span 2;
+	grid-row: 4/5;
+}
+
+
+
+
+	</style>
+</head>
+	<body>
+
+		<div id="body">
+<header>
+	<h1 class="header">WELCOME TO OUR WEBSITE!</h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Science</a></li>
+		<li><a href="#">Manangement</a></li>
+		<li><a href="#">Humanity</a></li>
+		<li><a href="#">Arts</a></li>
+	</ul>
+
+	</nav>
+
+
+	<section>
+		<p>Hello! This is me sahaj working with my first semantics website in HTML5 which i have been recently learning. Please, Let's hope that it will work out fine. 
+
+			THANK YOU
+		</p>
+
+		<p>
+		Please like subscribe and visit often in our website because it is now going to be your bible and school because you will learn many things around here.
+	</p>
+	</section>
+
+	
+
+	<aside>
+
+		<form class="form">
+			<label>First Name<br></label><input type="text" value="Enter your First Name" name="firstname"><br>
+
+			<label>Last Name<br></label>
+			<input type="text" name="lastname" value="Enter your last name"><br>
+
+			<label>Password<br></label>
+			<input type="password" name="password"><br>
+	
+			<label>Re-type Password<br></label>
+			<input type="password" name="password"><br>
+				
+			<label>Section<br></label>
+			<select name="select">
+				<option name="Science">Science</option>
+				<option name="Management">Management</option>
+				<option name="Humanity">Humanity</option>
+				<option name="arts">Arts</option>
+				<option name="HOtel">Hotel Management</option>
+				<option name="law">Law</option>
+			</select>
+</form>
+	</aside>
+
+<footer>
+	Thank Your for visiting our website!
+
+	<p class="company">
+		www.sahajrajmalla.com &copy &reg
+	</p>
+
+
+	
+</footer>
+
+
+</div>
+</body>
+</html>
+

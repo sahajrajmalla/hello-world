@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Try</title>
+	<meta charset="UTf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible", content="IE=edge, chrome=1">
+	<meta name="HandHeldFriendly" content="true">
+</head>
+<body>
+<p id="demo"></p>
+
+<button onclick="tesla.start()">START</button>
+<button onclick="tesla.stop()">STOP</button>
+
+<script type="text/javascript">
+	
+var counter = {
+	count: 0 ,
+
+	get reset() {
+	this.count=0;
+	},
+
+	get increment()  {
+	this.count += 1;
+
+	},
+
+	get decrement()  {
+	this.count -= 1;
+	},
+
+	set add(value)  {
+	this.count += value;
+	},
+
+	set sub(value)  {
+	this.count -= value;
+	}
+
+	};
+
+
+counter.increment;
+counter.decrement;
+counter.add= 21098730912870;
+counter.sub = 1098730912870;
+
+
+
+function car(name, model, milage, speed) {
+	this.carName = name;
+	this.model= model;
+	this.milage= milage;
+	this.speed= speed;
+	this.overView= function()  {
+	return "The total information about" + " " + this.carName + " " + "are" + ":<br>"
+      + "name:" + " " +this.carName +"<br>"
+       + "model number:" + " " +this.model +"<br>"
+        + "total Milage:" + " " +this.milage +"<br>"
+         + "speed:" + " " +this.speed +"<br>"
+          + "condition:" + " " +this.condition +"<br>"
+			+"count:" + " " + this.count + "<br>"
+}
+}
+
+
+car.prototype.condition="We Sell Brand New Cars Only!";
+car.prototype.start=function() {var x= alert("BOOM BOOM"); return x;};
+car.prototype.stop=function() {var x = alert("Car Stoped"); return x;};
+
+var tesla = new car("tesla", 200, 1000, "300m/s");
+
+
+Object.defineProperty(tesla, "condition", {value: "kin kin naya xa"} );
+
+var obarray= Object.getOwnPropertyNames(tesla);
+
+
+
+
+
+
+document.getElementById("demo").innerHTML= tesla.overView()+ counter.count+ "<br>" + obarray[0];
+
+</script>
+
+</body>
+</html>

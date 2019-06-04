@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>function call</title>
+</head>
+<body>
+
+<div id="div1">
+	<input type="button" name="button" onclick="callAjax('notes.txt', 'p2')" value="Click Me to get nodes.txt">
+	<p name= "p1"></p>
+	<p name="p2"></p>
+</div>
+<input id="login" type="text" value="">
+
+
+<script type="text/javascript">
+	
+function callAjax(url, p1)  {
+	var xhttp;
+	xhttp= new XMLHttpRequest();
+
+	xhttp.onreadystatechange = function()  {
+		if (this.readyState === 4 && this.status === 200)  {
+			document.getElementsByTagName("p")[p1].innerHTML= this.responseText;
+		}
+	}
+	xhttp.open("GET", url , true);
+	xhttp.send();
+
+}
+
+
+callAjax("ajaxnote.txt", "p1");
+
+var username= prompt("enter you name");
+
+document.cookie= "name= username; expires= 18, Dec 2020 12:12:12 UTC; path= C:\Users\SahilRaj\Desktop\ajax try\functioncall.html"
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

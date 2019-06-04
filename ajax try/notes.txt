@@ -1,0 +1,1 @@
+this is the text i have written on the .txt document and i will try to make it up to the website using ajax. if you can see this text in the website sahaj you better know that you have successfully have enrolled this document to the website by using ajax!

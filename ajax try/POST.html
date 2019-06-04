@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>post method</title>
+</head>
+<body>
+	<div id="div1">
+		<p id="p1"></p>
+	</div>
+
+
+	<script type="text/javascript">
+		
+		var xhttp = new XMLHttpRequest() ;
+
+		xhttp.onreadystatechange = function() {
+			if (this.readyState === 4 && this.status === 200)  {
+				document.getElementById("p1").innerHTML = this.responseText;
+		}
+		}
+		xhttp.setRequestHeader("Notes", "text");
+		xhttp.open("POST", "nodes.txt", true);
+		xhttp.send("fname=henry & lname=ford");
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+</head>
+<body ng-app="myApp">
+
+	<div>
+		<ul>
+			<li><a href= "#/!">Hamrosansar</a></li>
+			<li><a href= "#!nodetry">Nodetry</a></li>
+			<li><a href= "#!mywebsite">Mywebsite</a></li>
+			<li><a href= "#!test">Test</a></li>
+		</ul>
+		</div>
+		<div ng-view></div>
+	
+
+	<script>
+
+		var app = angular.module("myApp", [ngRoute]);
+		app.config(function($routeProvider)  {
+			$routeProvider.when("/",  {
+				templateUrl: "hamrosansar.html"
+			})
+		});
+		
+	</script>
+</body>

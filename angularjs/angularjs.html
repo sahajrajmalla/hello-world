@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>	
+<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+<script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<style type="text/css">
+	body  {
+		font-family: 'Annie Use Your Telescope'; font-size: 20px;
+
+	}
+</style>
+</head>
+
+<body data-ng-app = "body">
+
+<p>the rootscope color of the document is: {{color}} </p>
+
+<div data-ng-controller= "myCTRL">
+	<p>The scope color of the document is : {{color|uppercase}} </p>
+	</div>
+
+	<p>
+	the rootscope color of the document is still : {{color|lowercase}}</p>
+
+<div data-ng-controller= "controlMe">
+
+<input type="text" data-ng-model= "test">
+
+<ul style="list-style: none">
+	<li data-ng-repeat= "x in names | filter: test ">
+	{{x}} 
+	</li>
+</ul>
+
+<div data-ng-controller= "ctrl">
+<ul>
+	<li data-ng-repeat= "x in bio| orderBy : 'name'" >
+	{{x.name + ", " + x.country}}
+</li>
+</ul>
+</div>
+
+<div data-ng-controller= "clock">
+	<p>{{time}}</p>
+</div>
+
+<div data-ng-controller= "php">
+	<table>
+		<tr data-ng-repeat= " x in record | orderBy: 'Name'">
+			<td> {{x.Name}} </td>
+			<td> {{x.Country}} </td>
+		</tr>
+</table>
+</div>
+
+<div data-ng-controller= "shoppingList">
+	<ul>
+		<li ng-repeat= "x in list">{{x}}<span ng-click= "removeMe($index)">  &times;</span></li>
+	</ul>
+	<input ng-model= "add">
+	<button ng-click= "addMe()">ADD</button>
+		
+	</div>
+
+
+<!--________________________________________________________________________________________________________________________________-->
+
+	<script type="text/javascript">
+		
+		var app= angular.module("body", []);
+		app.run(function($rootScope)  {
+			$rootScope.color= "BLUE";
+		});
+
+
+		app.controller("myCTRL", function($scope)  {
+			$scope.color= "Sky Blue";
+		})
+
+		app.controller("controlMe", function($scope)  {
+			$scope.names= ["sahaj", "sadkjl", "ajskldjaskljd", "shakjd", "jkdf", "djfkdjfk"
+			];
+
+		})
+
+		app.controller("ctrl", function($scope)  {
+			$scope.bio= [
+			{name: "sahaj" , country: "nepal"},
+			{name: "elon" , country: "South Africa"},
+			{name: "steve" , country: "USA"},
+			{name: "mark" , country: "USA"},
+			{name: "bill" , country: "USA"},
+			{name: "richard" , country: "Canada"},
+			{name: "larry" , country: "USA"},
+			{name: "larry" , country: "USA"},
+			{name: "jeff" , country: "USA"},
+			]
+		})
+
+		app.controller("clock", function ($scope, $interval)  {
+			$scope.time = new Date().toLocaleTimeString();
+			$interval(function()  {
+				$scope.time= new Date().toLocaleTimeString();}, 1000);
+			});
+
+		app.controller("php", function ($scope, $http){
+			$http.get("bio.php").then(function(response) {
+				$scope.record= response.data.names;
+			});
+		});
+
+		app.controller("shoppingList", function($scope)  {
+			$scope.list= ["Laptop", "mobile", "books"];
+			$scope.addMe = function() {
+				$scope.list.push($scope.add);
+				$scope.add= " ";
+			}
+			$scope.removeMe= function(x)  {
+				$scope.list.splice(x,1);
+			}
+		});	
+		
+	</script> 
+
+</body> 
+</html>

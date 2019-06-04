@@ -1,0 +1,1280 @@
+AnguoarJs tutorial 
+
+AngularJs extends  html with new attributes.
+
+angulrJs is perfect for single page application (SPAs).
+
+AngularJS is easy to learn 
+
+start Leanging angular Nwo
+
+This tutorial 
+
+this tutorial is specially designed to help you learn angularJS as quickly as efficnetly as possible.
+
+first, you will learn the basis of angularJS : directives, expression ,filters, modules and controllers.
+
+Then you will learn everything else you nedd to know about angularJS.
+
+then you will learn everything else you need to know about angularJS.
+
+Events, Dom , forms input validation http and more.
+
+Try it yourself example in every chapter.
+
+In every chapter, you can edit the example online, and click on a button to view the result.
+
+
+What you should already know!
+
+Before you study angularJS , you should have a basic understanding of 
+1) HTMl
+2) CSS
+3) Javascript
+
+AngularJS history 
+
+angularJS version 1.0 was released in 2012
+
+Misko hevery , a google employee started to woek with angularJS in 2009.
+
+the idea turned out very well, and the project is now officially supported by google.
+
+
+AngularJS examples
+
+W3schools's angularJS tutorial contains lot of angularJS example:
+
+W3schools's angularJS tutorial contain lots of angular JS example.
+
+AngularJS introduction
+
+AngularJS is a javascript framework. it can be added to an HTMl page with a <scipt> tag.
+
+AnfularJS extend HTML attributes with directive and binds data to HTMl with expressions.
+
+Angular is a javascript framwork
+
+AngularJS is a javascript framework written in javascript.
+
+angular JS is distributed as a javascript file, and can be added to a web page with a script tag:
+
+
+AngularJS extends HTMl
+
+angular extend HTML with ng-direcives.
+
+the ng-app directives define an angularJS application.
+
+the ng-model directive binds the value of HTML controls(input, select, textarea) to application data.
+
+the ng-model directive binds the value of html controls( input, select, textarea) to application data.
+
+the ng-bind directive bids aplicaiton data to the html view.
+
+
+
+AngularJS directives.
+
+as you have already seen , angularJS direcitve are HTML attributes with an ng-prefix.
+
+the ng-init directive initializes angularJS application variables.
+the ng-init directive initializes angularJS application variables.
+
+The ng-init directive initializes angularJS application varibales.
+
+AngularJS example
+
+<div ng-app= " " ng-init= "firstname='john'">
+
+<p> the name is <span ng-bind="firstName"></span> </p>
+
+</div>
+
+
+You can use data-ng- instead of ng- if you want ot make your page html valid.
+
+you will learn a lot more about directive later in this tutorial
+
+Angular Expression
+
+AngularJS expression are wirtten insed double braces {{expresion}}
+
+AngularJS will "output"  data exactly where the expression is writeen
+
+
+AngularJs expression bind angularJS data to html the same way as the ng-bind directive.
+
+
+Angular JS application
+
+angularjhs modules define angularJS application 
+angularjs controllers control angularjs application
+
+the ng-app directive defines the application , the ng-controller directive defiesn the controller
+<div ng-app= "myApp" ng-controller= "myCtrl">
+
+
+
+AngularJS modiles define the application.
+
+angularJS module 
+
+var app= anular.module('myApp', []);
+
+angularjs controller control application
+
+
+
+
+angular Expressions
+
+angularJS binds data to HTML using expression.
+
+angularJS binds data to HTML using expression.
+
+angularJS binds data to html using expression.
+
+AngularJS expression
+
+angularJS expression can be written insde double braces.
+{{expression}}
+
+AngularJS expression can also be written insde a directive:
+
+ng-bind= "expression"
+
+angularJS will resolve the expression, and return the result exactly where the expression is written
+
+example {{5 +5}} ot {{firstName + " " + lastName}}
+
+if you remove the ng-app directive, Html will display the expression as it is, without solving it
+
+example
+
+
+
+<div>
+<p> my first Expression {{ 5+5 }}</p>
+
+</div>
+
+
+You can write expression wherever you like, angularJS will simply resolve the expression and result the result.
+
+example: let angularJs change the value of CSS properites
+
+change the color of the input box below, by changing its value
+
+<div ng-app= "" ng-init= "myCol= 'lightblue'">
+
+<input style= "background-color: {{myCol}}" ng-model= "myCol">
+</div>
+
+
+
+AngularJS number
+
+AngularJs numbers are like javascript number
+
+<div ng-app= "" ng-init= "quantity= 1; cost= 5">
+
+<p> total in dollar : {{ quantity * cost }} </p>
+
+</div>
+
+
+same example using ng-bind
+
+
+USING NG_INIT IS NOT VERY COMMON. YOU WILL LEARN A BETTER WAY TO INITIALIZE DATA IN THE CHAPTER ABOUT CONTROLLERS
+
+ANGULARJS STRING
+
+ANGULARJS STRING ARE LIKE JAVASCRIPT STRINGS.
+
+
+EXAMPLE
+
+<DIV NG-APP=""  NG-INIT="FIRSTNAME= 'JOHN'; LASTNAME= 'DOE'">
+
+<p> the name is {{ FIRSTNAME + " " + LASTNAME }}</p>
+
+</div>
+
+same example using ng-bibnds
+
+
+
+AngularJS object
+
+angularJS object are like javascript objects:
+
+example
+
+<div ng-app= " " ng-init= "person= {firstName: 'john', lastName:'doe'}">
+
+<p> My name is {{ person.firstName + " " + person.lastName }}</p>
+
+
+angularJS array
+
+AngularJS array are like javascript arrays:
+
+example
+
+<div ng-app= "" ng-init= "points= [1,2,3,45,4]">
+
+
+
+
+AngularJS expression vs javascript expression
+
+like javascript expression, angularJS expression can contain literal, operators and variables.
+
+like javascript expression, angularJS expression can contain literal, operators and variables.
+
+like javascript expression, angularJS expreesion can contain literal, operators and variables.
+
+unlike javascript expression, angularJS expression can be written inside the HTML.
+
+unlike javascript expression ,angularjS expression can be written inside the html
+
+unlike javascript expression, angularJs expression can be written inside the html
+
+angularJS expression donot support conditional do not support condtionals, loops and exceptions while while javascreip
+expression do
+
+angularJS expression support filters, while javascript expression donot
+
+angularJS expression support filters, while javascript expression dont
+
+
+
+AngularJS modules
+
+an angularJs module defines an application
+
+the module is a container for the different parts of an application
+
+the module is a container for the different parts of an application
+
+the module is a container for the diffrent parts of an application
+
+the module is a container for the different parts of an application
+
+the module is a container for the different parts of an application
+
+the module is a container for the different parts of an application
+
+the module is a conatiner for the different parts of an application
+
+the module is a container for the different parts of an application
+
+the modile is a container for the different parts of an applicaiton
+
+the module is a container for the different parts of an application
+
+the module is a container for the different parts of an application
+
+
+the module is a container for the application controllers
+
+controllers always beling to a module
+
+creating a module
+
+A module is created by using the angularJS function angular.module
+
+<div ng-app= "myApp">... </div>
+
+
+var app = angular.module("myApp", []);
+
+
+the "myApp" parameter refers to an HTML element in which the application will run.
+
+the "myApp" parameter refers to an HTML element in which the application will run.
+
+Now you can add controler, directive, filter and more, to your angularJS application
+
+the "myApp" parameter refers to an HTMl element in which the application will run
+
+the "myApp" parameter refers to an HTMl element in which the application will run
+
+the "myApp" parameter refers to an HTMl element in which the application will run
+
+the "myApp" parameter refers to an html element in which the application will run
+
+the "myapp" parameter refers to an HTML element in which the applicaiton will run
+
+
+now you can add controler, directive filters and more to your angualrJS application
+
+Adding a controller
+
+Add a controller to you applicaiton ,and to refer to the cotnrolerr with the ng-controller directive
+
+Example
+
+<div ng-app= "myApp" ng-controller= "myCtrl">
+{{firstName + " " + lastName}}
+
+</div>
+
+<script>
+
+var app = angular.module("myApp", []);
+
+app.controller("myCtrl", function ($scopr){
+	$scope.firstName= "john";
+	$scope.lastName= "doe";
+
+});
+</script>
+
+you will learn more about controllers later in this tutorail
+
+
+
+adding a directive
+
+AngularJS has a set of built-in directive which you can yse to add functionallity to your application.
+
+
+angularJS has a set of built-in directive which you can use to add functionalities to you applicaiton
+
+in addition you can use the module to add your own directive to your application
+
+in addition you can use the module to add your own directive to your application
+
+Example
+<div ng-app= "myApp" w3-test-directive></div>
+
+<script>
+
+var app = angular.module("myApp", []);
+
+app.directive("w3TestDirective", function() {
+	return {
+	template: "i was made in a directive construction"};
+	}
+});
+
+
+
+
+Mdoule and controllers in files
+
+it is common in angularJS application to put the module and the controller in javascript files
+
+in this example, "myApp.js" contains an application module defination ,while "myCTRL.js" contains the controller
+
+
+function can ppollute the gobal namespaces
+
+global function should be avoided in javascript. they can easily be overwritten or destroyed by other scripts
+
+global function should be avoided in javascript. they can easily overwritten or destroyed by other scripts
+
+angularJS modules reduces this promblem, by keeping all function local to the module
+
+
+
+when to laod the library
+
+while it is common in HTML applicaiton to place scripts at the end of the <body> element, it is 
+recommended that you load the angularJS library either inthe <head> or at the start of the <body>
+
+This is because ca;;s to angular.mudole can only be compiled ageter the library has been loaded
+
+
+
+AngularJS directives
+
+Angular JS lets you extend HTML with new attributes called directives
+
+angularJS has a set of built-in directives which offers functionlaity to your application
+
+angularJS also lets you define your own directives
+
+AngularJS directive 
+
+AngularJS directives are extended HTMl attributes with the prefix -ng.
+
+The ng-app direcitve initializes an angularJS application
+
+the ng-init directive initialize application data.
+
+the ng-init directive initialize application data.
+
+the ng-model directive binds the value of HTMl controls (input, select, textarea) to application data
+
+
+
+Example
+
+<div ng-app= " " ng-init= "firstName= 'sahaj'"></p>
+
+<p>You wrote: {[firstName]} </p>
+
+</div>
+
+
+The ng-app directive also tells angularJS that the <div> element is the owner of the angularJS application
+
+the ng-app directive also tells angularJS that the <div> element is the owner of the angularJS application
+
+the ng-app directive also tells the angularJS that the <div> element is the owner of the angularJS application
+
+
+
+DATA BINDING
+
+The {{ FirstName }} expression, in the example above, is an angularJS data binding expression.
+
+data bindnig in angularJS binds the angularJS expression with angularJs data
+
+Data binding in angularJS binds angularJS expression with angularJS data
+
+{{firstName}}  is bound with ng-model= "firstName"
+
+In the next example two text fields are bound together with two ng-model directives.
+
+in the next example two text fields are bound together with two ng-model directives.
+
+in the next example two text fields are bound together with two ng-model directives
+
+
+<div ng-app= "" 
+
+
+Using ng-init is not very common, you will learn how ti initialize data in the chapter about the controllers.
+
+Repeating HTML elements
+
+the ng-repeat directive repeats an HTML element
+
+<div ng-app= "" ng-init= "names= {'jani', 'hegi', 'sahaj', 'prasana' , 'kunsha']">
+<ul>
+
+<li ng-repeat= "x in names">
+{{x}}
+</li>
+</ul>
+</div>
+
+
+the ng-repeat directive actaully clones HTMl element once for each item in a collection
+
+the-repeat directive used on an araay or object
+
+
+
+AngularJS is perfect for database CRUD (create read update delete) application just imagine if these
+object were records from a database
+
+
+the ng-app directive
+
+
+the ng-app direcitve defines the root element of an agularJS application
+
+the ng-app direcitve will auto-bootstrap( automatically initialize ) the application when a web page is loaded.
+
+the ng-app directive will auto-bootstrap (automatically initialize) the application when web page is loade
+
+the ng-app directive will auto-bootstrap(automatically initialize) the application when a web page is loaded
+
+
+the ng-app directive will auto-bootstrap (automatically initialize) the application when a web page is loaded
+
+the ng-init directive
+
+
+The data-ng-init directive initial values for an angularJS application.
+
+Normally, you will not used ng-init you will use a controller or module instead 
+
+the ng-model directive
+
+the ng-model directive binds the value of HTML controls (input, select, textarea) to application data
+
+
+
+
+The ng-model directive can also:
+
+1) provide type validation for application data( number, email, required)
+2) provide status for application data( invalid, dirty, touched, erroe)
+3) provide CSS classes for HTML element
+4) bind HTML element to HTML forms.
+
+
+
+Read more about the ng-model direcitve in the next chapter
+
+Create new directives
+
+In addition to all the built-in angularJS directive, you can create your own directives.
+
+in addition to all the built-in angularJS directive, you can create your own directives.
+
+new directive are created by using the .directive function
+
+to invoke the new directive, make an HTMlelement with the same tag name as the new directive
+
+to invoke the new directive, make an HTMlelement witht eh same tag name as the new directive
+
+
+When naming a directive, you mustuse a camel case name, w3TestDirective, but when invoking it, you must
+- sepateed name , w3-test-directive
+
+
+Example
+
+<body ng-app = "app">
+
+<w3-test-directive></w3-test-directive>
+
+
+<script>
+
+var app = angular.module("app", []);
+app.directive("w3TestDirective", function() {
+	return{
+	template: "<h1>made by a directive!"</h1>""
+	};
+});
+
+<script>
+
+</body>
+
+You will invoke a directive by using:
+
+1) element name
+2) attribute
+3) class
+4) comment
+
+
+restrictions
+
+you can restirct yoyu rdirective to only invoked by some of the mehtods
+
+
+
+Angular JS ng-model directive
+
+data-ng-app
+data-ng-init
+data-ng-model
+data-ng-repeat
+data-ng-bind
+
+
+ng-model directive binds the value of HTML controls(input, select, textarea) to application data
+
+ng-model directive binds the value of the HTML controls (input, select, textarea) to application data.
+
+
+The ng-model directive
+
+with ng-model direcitve you can bind the value of an input field to a variable created in angularJS.
+
+
+Example
+
+<div ng-app= "myApp" ng-controller= "myCtrl">
+Name: <input ng-model = "name">
+
+</div>
+
+<script>
+
+var app= angular.module("myApp", []);
+app.controller('myCtrl', function ($scope) {
+	$scope.name= "john Doe";
+
+
+});
+</script>
+
+
+
+TWO WAY BINDING
+
+The binding goes both ways. if the user changes the value inside the input field, the angularJS property will also change its vcalue
+
+the bindinzatg goes both ways. if the user changes the value inside the input field, the angularJS property will also change its value.
+
+the binding goes both ways, if the user changes the value of inside the input field, the angularJS property will also change its value:
+
+example
+
+<div ng-app= "myApp" ng-controller= "myCtrl">
+Name: <input ng-model= "name">
+<h1>You entered: {{name}}</h1>
+</div
+
+
+Validate user input
+
+the ng-model directive can provide type validation for application data(number, email required)
+
+Example
+<form ng-app = "" name = "myForm">
+
+Email:
+<input type= "email" name= "myAddress" ng-model= "text">
+<span ng-show= "myForm.myAddress.$error.email"
+
+
+
+
+
+
+ANGUALR JS data binding
+
+data binding in angularJS is the synchronbixation between the model and the view
+
+data binding in the angularJS is the synchronization between the model and the view.
+
+data binding in the angularJS is the synchronization between the model and the view.
+
+Data model
+
+angularJS application ussually have a data model. the data model is a collection of data available for the application
+
+angularJS application usually have a data model. the data model is a collection of data available for the application
+
+var app= angular.module("myApp"), []);
+app.controller('myCtrl', function ($scope)  {
+	$scope.firstname= "john";
+	$scope.lastname= "doe";
+
+});
+
+
+Html View
+
+The HTML container where the angularJS application is displayed is called the view.
+
+the HTMl conainer where the angulrJS application is displayed is called the view.
+
+The view has acess to the model, and there are several ways of displaying model data in the view.
+
+the view has access to the model, and there are several way of displaying model data in the view.
+
+the view has acess to the model, and there are several way of displaying model dataain the view
+
+
+you can use the ng-bind directive, which will bind the innerHTML of the element to the specified model property
+
+you can use the ng-bind directive, which will bind the innerHTML of the element to the specified model property
+
+Example
+
+<p ng-bind= "firstname"></p>
+
+Youc an also use the double braces {{  }} to display content from the model.
+
+Example
+
+<p>First name: {{firstname}} </p>
+
+Or you can use the model directive in the html control to bind the model to the view
+
+The ng-model directive 
+
+use the ng-model directive to bind the data from the model to the view on tHTML controls such as input, text area 
+and select
+
+Example
+
+<input data-ng-bind="firstname">
+
+the ng-model directive provides a two way binding between the model and the view.
+
+the ng-model directive provides a two way data binding between the model and the view
+
+Two way data binding
+
+data binding in angularJS is the synchronization between the model and the view.
+
+data binding in angularJS is the synchronization between the model and the view
+
+when data in the model chanegs, the view reflects the change, and when data in the view changes, the model is
+updated as well. this happens immediatelly and automatically, which makes sure that the model and the view updated at all times
+
+
+
+AngularJS controller
+
+Application in angualrJS are controlled by controllers. Read about controller in controller chapter.
+
+because of the immediate synchronization of the model and the view, the controller can be completely separated 
+from the view, and simply concentrate on the model data. thanks to the data binding in angularJS, the view will
+reflect any changes made in the controller.
+
+because of the immediate syncronization of the model and the view, the controller can be completly separated from the view, 
+and simply concentrate on the model data. thanks to the data binding in angularJS, the view will reflect any changes
+made in the controller!
+
+because of the immediate synchronization of the model and the view, the controller can be completely separated from 
+
+
+because of the immediate synchronization of the model and the view, the controller can be completely separated from the view, and sinmp
+simply concentrate on the model data. thanks to the data binding in angularJS, the view will reflect any changes made in thecontroller
+
+because of the immediate synchronization of the model and the view, the controller can be completely separated from the view, and simnply concentrated in the model data. thanks to the data binding in the angularJS, the view will reflect any changes made in the controller.
+
+
+
+
+
+Example
+
+<div ng-app= "myApp" ng-controller= "myCTRL">
+<h1 ng-click= "changeName()"> {{firstname}}</h1>
+</div>
+
+<script>
+var app = angular.module("myApp", []);
+app.controller('myCTRL', function($scope)  {
+	$scope.firstname = "john";
+	$scope.changeName= function()  {
+	$scope.firstName= "Nelly";
+	}
+	
+});
+<script>
+
+
+
+
+
+ANGULARjs controller
+
+AngularJS controller control the data of angularJS application
+
+angularJS controller control the data of angularJS application
+
+angularJS controller control the data of angularJS application
+
+angulrJS controller control the data of angularJS application
+
+angularJS controller control the data of the angularJS application
+
+ANGUALRjs cotnroller control the data of the angularjs Apllication
+
+
+AngularJS controller are regular javascript object
+
+angularJS controller are regualr javascript object
+
+angularJS controller are regular javascript object
+
+AngularJS controllers
+
+angularJS application are controller by controller
+
+the ng-controller directive defines the applicaation controller
+
+a controller is a javascript object, created by a standrd javascript object constructor.
+
+
+
+AngularJS example
+
+<div ng-app= "myApp" ng-controller= "myCTRL">
+
+First Name: <input type= "text" ng-model= "firstName"><br>
+Last Name: <input type= "text" ng-model = "lastName"><br>
+<br>
+
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+
+<script>
+var app= angular.module('myApp', []);
+app.controller('myCtrl', function($scope)  {
+	$scope.firstName= "Sahaj";
+	$scope.lastName= "Raj Malla";
+});
+
+</script>
+
+
+Application explained:
+
+the angularJS application is defined by ng-app = "myApp". the application runs inside the <div>
+
+the angularJS appplication is defined by ng-app= "myApp", the application runs inside the <Div>
+
+the ng-controller= "myCtrl" attribute is an angularJS directive. it is defines a controller.
+
+the myCtrl function is a javascript function.
+
+angularJS will invoke the controller with a $scope object
+
+In angularJS, $scope is the application object (the owner of application variables and function)
+
+AngularJs will invoke the controller with a $scope object
+
+IN angularJS, $scope is the application object( the owner of application varibale and function)
+
+The controller creates two properties (variables) in the scope (firstName and lastName)
+
+the ng-model directive bind the input field to the controller properties (firstNAme and the lastName).
+
+
+Controller methods
+
+The example above demonstrated a contoller object with two properties : lastName and firstNAme
+
+a controller can also have methods (variables as function)
+
+
+Controller in external files
+
+In larger application, it is common to store controller in external files
+
+Just copy yhe bode between the scriopt tag in to an external file nam e
+
+
+
+
+ANGULAR JS SCOPE
+
+
+The scope is the binding part between the HTML view and the javascript controller
+
+
+the scope is an object with the available properties and methods
+
+the scope is available for both view and the controller
+
+
+How to use the scope
+
+Whn you make a controller in angularJs, you pass the $scope object as an argument.
+
+Example
+
+properties made in the controller, can be reffered to in the view
+
+properties made in the controller, can be reffered to in the view
+
+properties made in the controller, can be refered to in the view.
+
+<div ng-app= "myApp" ng-controller= "myCtrl">
+
+<h1> {{carname}} </h1>
+
+</div>
+
+<script>
+
+var app = angular.module("myApp", []);
+
+app.controlle('myCtrl', function ($scope)  {
+	$scope.carname=  "tesla";
+});
+
+<script>
+
+
+
+
+When adding properties to the $scope object in the controller, the view (html) gets access to these properties
+
+in the view, you donot use the prefix $scope, you just refer to a property name, like {{carname}}
+
+When adding properties to the $scope object in the controller, the view (html) gets access to these properties
+
+when adding properties to the $scope object in the controller, the view (html) gets access to these propertes
+
+when adding properties to the $scope object in the controller, the view (html) gets access to these properties
+
+when adding properties to the $scope object in the controller, the view (html) gets access to these properties
+
+
+In the view, you donot use teh prefix, $scope, you just refer to a property name like {{carname}}
+
+Understanding the scope
+
+IF we consider an angularJS application to consist of 
+1) ciew, which is the HTML
+2) model, which is data available for the current view
+3) controller, which is the javascrpt function that makes.chanegs.removes.contros the data
+
+
+
+The scope is the model
+
+the scope is a javascript object with properties and methods, which are available for both the view and the controller
+
+the scope is a javascript object with properties and methods, which are available for both the view and the controller
+
+the scope is a javascript object with propeties and methods, which are available for both the view and the controller
+
+the scope is a javascript object with properties and methods, which are available for both the view and the controller
+
+
+
+KNOW YOU SCOPE
+
+It is important to know which you are dealing with, at any time.
+
+it is important to know which you are dealing with, at any time.
+
+it is important to know which you are dealing with , at any time.
+
+it is important to know which you are dealing with, at any time
+
+it is important to know which you are dealing with at any time
+
+
+in two example above there is onlu one scope, so knowing your scope is no t an issue but for larger applicatgion
+ther can be section in the HTML DOM which can only access certain scopes
+
+
+In the two example above there is only one scope, so knowing you scope is not an issuse but for larger applicaton there can be section in the hTML dOm which can only access certain scopes
+
+In the two example above there is only one scope, so knowing you scope is not an issuse
+but for larger application there can be section in the HTML DOM which can only access certain scopes.
+
+Knowing scope is not an issuse in these two simple example above, but for larger application there acn be
+section in the HTML DOM which can only access certain scopes
+
+
+
+ROOT SCOPE
+
+all application have a $rootScope which is the scope created on the HTML Elemenet that contain the ng-app directive
+
+the rootscope is available in the entire application
+
+
+if a variable has the same name in both the current scope and in the rootscope aplication use the one in thcurrent scope
+
+if a variable has the same name in both the current scope and in the rootScope, the application uses the one in the current scope
+
+Example
+
+A variable named color exist in both the controller scope and in the rootScope
+
+<body ng-app= "myApp">
+
+<p> the rootScope's favorite color: </p>
+<h1> {{color}} </h1>
+
+
+<div ng-controller= "myCtrl">
+
+<p> the scope of the controller's favorite color</p>
+
+<h1> {{color}} </h1>
+
+</div>
+
+
+<p> the rootScope's favorie color is still</p>
+
+<h1> {{color}}</h1>
+
+
+<script>
+var app = angular.module("myApp", []);
+app.run(function($rootScope)  {
+	$rootScope.color= "blue";
+});
+
+app.controller("myCtrl", function ($scope)  {
+	$scope.color= "red";
+
+});
+
+
+
+angularJS filters
+
+Filters can be added in angularJS to format the data
+
+filter can be added in angularJS to format the data
+
+
+AngularJS filter
+
+AngularJS provides the filters to transform data:
+
+AngularJS provides filters to transform data:
+
+AngularJS provides filters to transform data:
+
+angularJS provides filters to transform dta:
+
+1) currency: format a number to a currency format
+2) data: format a date to specified format
+3) filter: select a subset of item from a array
+4) json: format an object to a JSON string
+5)limitTo limit an array/string, into specified number of element/characters.
+6) lowercase: foramrt a string to lowecase
+
+
+
+Addding filters to expression
+
+filters can be added to expresssion by using the pipe character |, followed by a filter.
+
+the uppercase filter format string to upper case:
+
+the uppercase filter format string to upper case:
+
+the uppercase fileter format string to uppercase
+
+
+Example
+
+<div ng-app= "myApp" ng-controller= "personCtrl">
+
+<p> the name is {{lastName|uppercase}}</p>
+
+</div>
+
+
+
+Adding filter to expression 
+
+filter can be added to expression by using the pipe chracter |, follwed by a filter
+
+filter can be added to expression by using the pipe character |, followed by a filter
+
+filter can be added to expression by using the pipr character |, followed by a filter
+
+filter can be added to expression by using the pipe character |, follwed by a filter
+
+filter can be added to expression by using the pipe character |, followed by  a filter
+
+
+
+Adding filter to directives
+
+filter are added to directive. like ng-repeat, by using the pipe character | , followed by a filter
+
+Example
+
+The orderBy filter sorts an array:
+
+
+
+
+The currency filter
+
+the currency filter formats a number as currency!
+
+The filter filter
+
+The filter filter selects a subset of an array
+
+the filter filter selects a subset of an array
+
+the filter filter can only be used on array, it return an array containing only the matching items
+
+AngularJS filters
+
+AngularJS provides filters to transform data:
+
+1) currency: Format a number to a currency format.
+2) date: format a date to specified format
+3) filter: select a subset of items from an array.
+4) json: format an object to a JSON string
+5) limitTo: limit an array/string, into a specified number of elements/characters.
+6) lowercase: format a string to lowercase
+7) number: format a number to string
+8) orderBy : order an array by an expression
+9) uppercase: format a string to upper case.
+
+
+ADDING FILTERS TO EXPRESSIONS
+
+Filters can be added to expressions by using the pipe character |, followed by a filter.
+
+the uppercase filter format strings to uppercase
+
+ADDING FILTER IN DIRECTIVE
+
+<li ng-repeat= "x in names | orderBy= "city">
+
+
+
+
+ANGULARjs SERVICE
+
+iN ANGULARjs YOU can make your own service, por use of one of the many built-in services.
+
+What is a service?
+
+
+In angularJS, a service is a function , or object that is available for, and limited to, your angularJS aplication
+
+in angularJS, a service is a function , or object that is available for ,and limited to 
+your angularJS application
+
+AngularJS has about 30 built-in services. one of them is $location service.
+
+THe $location service has methods which returns information about the location of the current web page
+
+The $location service has methods which returns information about the location of the curren web oage
+
+Example
+
+Use the $location service in a controller!
+
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function ($scope, $location)  {
+	$scope.myUrl = $location.absUrl()
+});
+
+
+Note that the $location service is passed in to the controller as an arguement. In order to use the service in the controller. it must be defined as a dependency
+
+NOte that the $location service is passed in to the controller as an argument. in order to use the service
+in the controller, it must be defined as a dependency
+
+NOte that the $location service is passed in to the controller as an argument. in order to use the service 
+in the controller, it must be defined as a dependency.
+
+Why use services?
+
+For many services, like the $location service, it seems like you could use object that are already in the DOM
+
+
+
+
+AngularJS forms
+
+From in angularJS provides data-binding and validation of input controls
+
+froms in angularJS provides data-binding and validation of input controls
+
+
+Application Explained
+
+step: 1 Getting started 
+
+Start by making an application called myShoppingList, and add a controller named myCtrl to it.
+
+the controller adds an array named products to the current $scope.
+
+In the HTML, we use the ng-repeat directive to display a list using the item in the array.
+
+
+step : 2 Adding items
+
+In the HTML, add a text field, and bind it to the application with the ng-model directive.
+
+in the controller, make a function named addItem, and use the value of the addMe input field to add an item to the products array.
+
+In the controller, make a function name addItem, and use the value of the addMe input field to add an item to the product array.
+
+Add a button, and give it an ng-click diretive that will run the addItems function when the button is clicked
+
+add a button ,and give it an ng-click directive that will run the addItem function when the button in clicked
+Example
+
+Now we can add item to the shopping list
+
+<script>
+
+var app = angular.module("myShoppingList", []);
+app.controller("myCtrl", function($scope)  {
+	$scope.products= ["milk", "bread", "cheese"];
+	$scope.addItem = function ()  {
+	$scope.products.push($scope.addMe);
+
+	}
+});
+
+</script>
+
+<div ng-app = "myShoppingList" ng-controller= "myCtrl">
+<ul>
+<li ng-repeat= "x in products">{{x}}</li>
+</ul>
+
+<input ng-model= "addMe">
+
+<button ng-click= "addItem()">ADD</button>
+sp</div>
+
+
+Step 3: removing Items
+
+We also want to able to remove item from the shopping list.
+
+In the controller, make a function named removeItem, which take the index of the item you want to remove as a parameter
+
+In the HTML, make <span> element for each item, and give them an ng-click directive which calls the removeItem
+function with the current index
+
+Example
+
+now we can remove items from our shopping list
+
+<script>
+
+var app= angular.module("myShoppingList". []);
+app.controller("myCtrl", function($scope)  {
+	$scope.products= ["milk", "bread", "cheese"];
+	$scope.addItem= function ()  {
+	$scope.products.push($scope.addMe);
+	}
+	$scope.removeItem= function (x)  {
+	$scope.products.indexOf(x)
+	}
+})
+
+
+Step: 4  Error handling
+
+The application has some , like if you try to add the same item twice, the application crahese. also it should not allowed toa add empty items.
+
+We will fix that by checking the value before adding new item.
+
+In the HTML, we will add a container for error message and write an error messgae when someone tries to add an existing item
+
+
+Example
+
+a hopping list, with the possibility to write error messgaes
+
+<script>
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope)  {
+	$scope.products= ["milk", "bread", "cheese"];
+	$scope.addItem= function ()  {
+	$scope.errortext= "";
+	if (!$scope.addMe) {return;}
+	if ($scope.products.indexOf($scope.addMe)== -1) {
+	$scope.products.psuh
+	}
+	}
+})
+
+
+Step: 5 Design
+
+The application works, but could use a better design. we use the w3.css stylesheet to style our application
+
+and the w3.css stylesheer and include the proper classes throughout the application and the result will be
+same as the shopping list at the top of this page
+
+Example
+
+Style your application using the w3.CSS stylesheet.
+"

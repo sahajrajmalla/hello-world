@@ -1,0 +1,367 @@
+
+<!doctype html>
+<html>
+<meta name="viewpoint" content="width:device-width; initial-scale:1.0">
+<meta charset="UTF-8">
+<head>
+	
+
+	<title>CANVAS</title>
+<script type="text/javascript">
+	var c= document.getElementById("mycanvas");
+	varctx=c.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(95,50,40,0,2*mathi.PI);
+	ctx.stroke();
+	
+</script>
+</head>
+	<body>
+<canvas id="mycanvas" width="200px" height="100" style="border:1px solid #000;">
+</canvas>
+
+
+<pre>
+	<h1>HTML5 SVG</h1>
+
+	<h2>What is SVG</h2>
+	<ul list-style-type="circle">
+		<li>SVG stands for Scalable vector grahics</li><br>
+<li>SVG is used to define grahics for the web</li><br>
+<li>SVG is a W3C recommendation</li><br>
+</ul>
+
+<h1>The HTML &ltsvg&gt element
+
+	The HTml &ltsvg&gt element is conatiner for SVG grahics.
+
+	SVG has a several mrthods for drawing paths, boxes, circles, text and grahics images.
+
+<svg  style="margin:0px 0px 0px 500px; padding: 50px;"width="1200px" height="768px">
+	<circle cx="70" cy="70" r="50" stroke="blue" stroke-width="20" fill="red"/>
+</svg>
+
+
+<svg width="300" height="200">
+	<polygon points="100,10 40,198 190, 78 10 , 78 160, 198"
+	style="fill:line; stroke:red; stroke-width_5; fill-rule:evenodd;"/>
+</svg>
+
+
+<svg height="130px" width=500px">
+	<defs>
+		<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0%" style="stop=color:rgb(255,255,0); stop-opacity:1"/>
+			<stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+
+
+
+</h1>
+</pre>
+
+<pre>
+	<h1>Difference Between SVG and Canvas</h1>
+
+	SVG is a language for describing 2D prahics in XML
+	Canvas draws 2d grahics ont he fly(with a javascript)
+
+	Svg is XMl based, which means that every element is avaiable within svg dom. you can attach javascript event handler for an event.
+
+	In SVG, each drwan shape is remembered as an object. If attributes of an SVG onject are changed, the browser canautomatically rerender the shape
+
+
+	In SVG EAch drwan shape is remembered as an object. if attributes of an SVg object are changed , the browser automatically re-render the shape.
+
+	Canvas is rendered pixel by piel. In the canvas, once th egraphic is drawn. it is forgotten by the broweserif its position is changed , the entire scene needs to be redrawn, including any object that might have been covered by the grahics....
+
+	COMPARISION of canvas and SVG
+
+	THe table below shoes some important difference between canvas and SVg:
+
+	<table border="5px solid #000">
+		<tr>
+			<th>Canvas</th>
+			<th>SVG</th>
+		</tr>
+
+		<tr>
+			<td>No resolution dependent</td>
+			<td>resolution independent</td>
+		</tr>
+		<tr>
+			<td>no support to event handler</td>
+			<td>Support for event handler</td>
+		</tr>
+
+		<tr>
+			<td>poor text rendering capabilities</td>
+			<td> BEst suited for a application with a large rendering areas</td>
+		</tr>
+
+		<tr>
+			<td text-align="left">YOur can save the resulting image as .png or,pjg</td>
+			<td>Slow rendering if complex(anything that uses the DOM a lot will be slow)
+			</td>
+		</tr>
+		<tr>
+			<td>well suited for grahic- intensive games</td>
+			<td>not suited for gamr application</td>
+		</tr>
+		</table>
+
+	</pre>
+	<pre>
+
+		HTML Multimedia
+
+		Multimedia on the web is sound, video, moviies and animations.
+
+		What is multimedia?
+		Multimedia comes in many different formats. IT can be almost Anuthing you can hear or see..
+
+		example: images, music, sound, videos, records, films, animation and more...
+
+		Web pages often conatin multimedia element of different types and formats.
+		IN this chapter you will lean about the different multimedia formats.
+
+		Browser support
+		The first web browser had support for text only, limited to single font in a single color.
+		Later came teh browser with support for colors and fonts, and images,
+
+		Audio, video and aniamtion have been handled differently by major browser. differnet foramhve have been supported and some formats require extrra helper program(plug-ins) towork.
+
+		Hopfully this will become history. HTML 5 multimedia promises an eaiser future for multimedia.
+
+		Multimedia formats...
+
+		Multimedia element (like audio or video) are stored in media files
+
+		The most common way to discover the type of a file is to look at its file extension
+
+		Multimedia files have formats and differnet extension like:
+
+		.swf,.wav,.mp3,mp4,.mpg,.wmc and .avi.
+
+
+		Common Video Formats
+
+		Mp4 is the new and upcoming format for inter video
+		mp4 is recommand by youtube.
+		mp4 is supported by flash players.
+		Mp4 is suported by HTML5
+
+</pre>
+		<table border="3px solid #000">
+			<tr>
+				<th>format</th>
+				<th>File</th>
+				<th>Description</th>
+			</tr>
+
+			<tr>
+				<td>MPEF</td>
+				<td>.mpg/.mpeg</td>
+				<td>MPEG. Developed by the moving pictures expert group. the first popular video format on the web. Used to be supported by all browser, but it is not supported in HTML5(see mp4)</td>
+			</tr>
+
+			<tr>
+				<td>AVI</td>
+				<td>.avi</td>
+				<td>Avi(audio video interleave). developed by microsoft. commonly used in video cameras and tv hardware. plays well on window ocmputer, but not inweb browsers.
+				</td>
+
+			</tr>
+
+			<tr>
+				<td>WMV</td>
+				<td>.wmv</td>
+				<td>WMV(window Media Video) developed by microsoft commonly used in video cameras and tv hardware. plays weel on windows computer, but not on web browser.
+				</td>
+			</tr>
+
+			<tr>
+				<td>QuickTime</td>
+				<td>.mov</td>
+				<td>Quick TIme developed by apple commonly used in video cameras and tc hardware palys well in apple computer but nor in web browser.(seemp4)
+					</td>
+				</tr>
+
+				<tr>
+					<td>real video</td>
+					<td>.rm/.ram</td>
+					<td>real video. developed y real media to allow video streaming with lowbandwidths it is still used for inline video and internet TV but does not play in web browser...
+					</td>
+
+				</tr>
+
+				<tr>
+					<td> FLash</td>
+					<td>.swf/.flv</td>
+					<td>Flash developed by macromedia. often requires an extra component(plug-ins) to play in web browsers.
+					</td>
+
+				</tr>
+
+				<tr>
+				<td>ogg</td>
+				<td>.ogg</td>
+				<td>Theora off. developed by the xiph.org foundation suported bt HTML5</td>
+				</tr>
+
+				<tr>
+				<td>WebM</td>
+				<td>.webm</td>
+				<td>WebM. developed by the the web giants such as mozilla, opera, adode , and google supported by HTML5</td>
+
+			</tr>
+
+			<tr>
+			<td>MPEG-4/MP4</td>
+			<td>.MP4</td>
+			<td>MP4, develeoped by the moving picture expert group. based ont he quick tim. commonly used i newer video cameras and tv hardware. supported by all the HTMl browser rcommended by YOUtube.
+			</td>
+			</tr>
+			</table>
+
+HTML video Example. courtesy of BIg Buck Bunny.
+
+
+<h1>Playing Video in HTml</h1>
+Before Html 5, a video could only be played in a browser with a plug in like flash.
+
+The HTMl5 <video> element specifies a standard way to embed in a vdeo ina web page.
+
+
+	the Html <video> element
+
+		To show a video in HTML, use the video element.
+
+		Example
+		<video width="1003px" height="768px" controls>
+
+		<source src="movie.mp4" type="video/mp4">
+			<source src="movir.ogg" type="video/ogg">
+				YOur Browser does not Support the video tag
+			</video>
+
+
+			How it works
+
+
+			The controls attribute adds video controls, like play, pause and volume.
+
+			It is a good idea to always inlcude width and height attribute. IF the height and width are not set the page might flicker while the video loads.
+
+			The <source> element allows you to specify alternative video files while the browser may CHOOSE FROM THE BROWSER WILL USE the first recognized format.
+
+				<source> element allows you to specify alternative video files which the browser maychoose from the browser will use the first recognized format.
+
+					The text bbetween the video and .video tags will only be displayed in browser that do not support the video element
+
+
+					HTML <video> auto play
+
+						<video width="1003px" height="768px" autoplay="autoplay">
+							<source src="movie.mp4> type="video/mp4">
+							your browser doesnot support the video</video>
+
+
+
+</video>
+</video>
+</video>
+
+<pre>
+	HTML video- METHOD , properties and events
+
+
+	HTml 5 defines the DOM methods, properties and events for the video element.
+
+	This allow you to load , play,and pause video as well as setting duration and volume.
+	There are also DOM events that can notify you when a video begihns to play, is paused etc
+
+
+	Example
+	Using javascript...
+
+
+
+
+AUDIO On the WEb
+
+before HTML5, audio files could only be played in browser with the plugin like flash)
+
+The HTml5 <audio> element specifies a standard way to embed audio in a web page.
+
+
+
+<audio width="1003px" height="50px" controls>
+	<source src="littledoyouknow.mp3" type="audio/mp3"/>
+	your browser does not support the audio element.
+</audio>
+
+
+Html audio
+How it works
+
+The controls attribute adds audio controls like play pause volume.
+
+The <source> element allows you to specify alternative audio files which the browser may chosen from. the browser will use the first recognized format.
+
+	tHE tEXT BETWENNTH <AUDIO> and </AUDIO> tags will only be displayed in browser when the audio in support in the browser.
+
+	 the <source> element allows to specify alternative audio files which the browser may choosen fromthe browser sill use the first recognized format
+
+	 	The <ource> element allows you to specify alternative audio fiels whcih the browser may choose 	from. the browser will use the first recognized format.
+
+	 		The text between the audio  and /audio tag will only be displayed element.
+
+
+	 		HTml audio 
+
+	 		HTML audio MEthdos properties and element
+
+	 		HTML 5 defines DOm method , properties and event for the <audio> element
+
+	 			this allows you to load, paly and pause audios as well as set tge duration and volume
+
+	 			there are also DOM events that can notify you when an audio begins to play is paused rtc
+
+	 			For a Full DOm reference go to our HTMl5 audio/video DOM reference
+
+
+	 			HTml
+	 			Audio Tags
+
+	 			<table>
+	 				<tr>
+	 					<th>Tag</th>
+	 					<th>Description</th>
+	 				</tr>
+
+	 				<tr>
+	 					<td>audio</td>
+	 					<td>Defines sound content</td>
+	 				</tr>
+
+	 				<tr>
+	 					<td>source</td>
+	 					<td>defines multiple media resource for media eleemnts, such as video and audio
+	 						</td>
+	 					</tr>
+	 				</table>
+
+</audio></ource></audio></pre>
+
+</body>
+
+</html>
+
+
