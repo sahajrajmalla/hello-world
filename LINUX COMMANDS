@@ -1,0 +1,121 @@
+LINUX COMMANDS
+
+
+1) pwd --> print where we currently are in the file system.
+
+2) ls --> list all the program 
+
+3) cd --> Navigating
+
+4) cd .. --> parent dir
+
+5) mkdir 
+
+6) touch
+
+7) cp <old> <new>
+
+8) mv <old> <new> : to rename the directory or a file
+
+9) mv <old> <location>
+
+10) rm
+
+11) find
+
+12) grep
+
+13) cut
+
+14) &&
+
+15) wc
+
+16) |
+
+17) >
+
+18) >>
+
+19) sort
+
+20) uniq
+
+21) curl
+
+22) subl
+
+23) apt-get 
+
+24) rsync 
+
+25) crontab
+
+26) exit
+
+27) ssh
+
+28) alias
+
+29) sips
+
+30) cat
+
+31) less
+
+32) tar
+
+33) gzip
+
+34) unzip
+
+35) whatis
+
+36) whoami
+
+37) w
+
+38) dpkg
+
+39) rpm
+
+40) chmod
+
+41) chown
+
+42) chgrp
+
+43) ping
+
+44) whois
+
+45) dig
+
+46) nslookuo
+
+47) ifconfig
+
+48) iwconfig
+
+49) netstat
+
+50) arp
+
+51) wget
+
+52) scp
+
+53) vi
+
+54) facl
+
+55) useradd 
+
+56) groupadd
+
+57) passwd
+
+58) chage
+
+59) renice <niceness> <pid>
+
